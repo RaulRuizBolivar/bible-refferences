@@ -13,16 +13,18 @@ export class PropheciesService {
     const q = this.searchQuery().toLowerCase().trim();
     const cat = this.activeCategory();
 
-    return this._all.filter(p => {
-      const matchesCat = cat === null || p.category === cat;
-      const matchesSearch =
-        !q ||
-        p.title.toLowerCase().includes(q) ||
-        p.oldTestament.reference.toLowerCase().includes(q) ||
-        (p.newTestament?.reference.toLowerCase().includes(q) ?? false) ||
-        p.theme.toLowerCase().includes(q);
-      return matchesCat && matchesSearch;
-    });
+    return this._all
+      .filter(p => {
+        const matchesCat = cat === null || p.category === cat;
+        const matchesSearch =
+          !q ||
+          p.title.toLowerCase().includes(q) ||
+          p.oldTestament.reference.toLowerCase().includes(q) ||
+          (p.newTestament?.reference.toLowerCase().includes(q) ?? false) ||
+          p.theme.toLowerCase().includes(q);
+        return matchesCat && matchesSearch;
+      })
+      .sort((a, b) => b.importance - a.importance);
   });
 
   readonly categories: ProphecyCategory[] = ['mesiánica', 'apocalíptica', 'histórica'];

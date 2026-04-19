@@ -9,11 +9,16 @@
 
       <header class="detail-header">
         <h1 class="detail-title">{{ p.title }}</h1>
-        <div class="chip-row">
+        <div class="meta-row">
           <mat-chip-set>
             <mat-chip [class]="'cat-chip cat-' + p.category">{{ p.category }}</mat-chip>
             <mat-chip class="theme-chip">{{ p.theme }}</mat-chip>
           </mat-chip-set>
+          <div class="importance-stars" [title]="'Importancia: ' + p.importance + '/5'">
+            @for (s of [1,2,3,4,5]; track s) {
+              <mat-icon class="star" [class.filled]="s <= p.importance">star</mat-icon>
+            }
+          </div>
         </div>
       </header>
 

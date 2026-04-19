@@ -1,6 +1,11 @@
 <mat-card class="prophecy-card" [class]="'prophecy-card cat-border-' + prophecy.category">
   <mat-card-header>
     <mat-card-title class="card-title">{{ prophecy.title }}</mat-card-title>
+    <div class="importance-stars" [title]="'Importancia: ' + prophecy.importance + '/5'">
+      @for (s of [1,2,3,4,5]; track s) {
+        <mat-icon class="star" [class.filled]="s <= prophecy.importance">star</mat-icon>
+      }
+    </div>
     <mat-card-subtitle>
       <mat-chip-set>
         <mat-chip [class]="'cat-chip cat-' + prophecy.category">

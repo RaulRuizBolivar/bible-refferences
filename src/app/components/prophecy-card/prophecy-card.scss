@@ -21,6 +21,21 @@
   &.cat-border-histórica    { border-top-color: #0d47a1; }
 }
 
+.importance-stars {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 4px;
+
+  .star {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #d0d0d0;
+
+    &.filled { color: #f59e0b; }
+  }
+}
+
 .card-title {
   font-size: 1rem !important;
   font-weight: 600 !important;
