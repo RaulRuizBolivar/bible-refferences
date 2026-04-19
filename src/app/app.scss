@@ -1,0 +1,21 @@
+.app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .toolbar-icon {
+    margin-right: 10px;
+  }
+
+  .toolbar-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+}
+
+.app-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}

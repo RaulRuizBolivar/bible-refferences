@@ -1,0 +1,67 @@
+@if (prophecy(); as p) {
+  <div class="detail-page">
+    <div class="detail-container">
+
+      <button mat-button class="back-btn" (click)="volver()">
+        <mat-icon>arrow_back</mat-icon>
+        Volver
+      </button>
+
+      <header class="detail-header">
+        <h1 class="detail-title">{{ p.title }}</h1>
+        <div class="chip-row">
+          <mat-chip-set>
+            <mat-chip [class]="'cat-chip cat-' + p.category">{{ p.category }}</mat-chip>
+            <mat-chip class="theme-chip">{{ p.theme }}</mat-chip>
+          </mat-chip-set>
+        </div>
+      </header>
+
+      <mat-divider />
+
+      <section class="verse-section">
+        <h2 class="verse-label">
+          <mat-icon>history_edu</mat-icon>
+          Antiguo Testamento — Profecía
+        </h2>
+        <p class="verse-ref">{{ p.oldTestament.reference }}</p>
+        <blockquote class="verse-text">{{ p.oldTestament.text }}</blockquote>
+      </section>
+
+      <mat-divider />
+
+      @if (p.newTestament) {
+        <section class="verse-section">
+          <h2 class="verse-label">
+            <mat-icon>auto_stories</mat-icon>
+            Nuevo Testamento — Cumplimiento
+          </h2>
+          <p class="verse-ref">{{ p.newTestament.reference }}</p>
+          <blockquote class="verse-text">{{ p.newTestament.text }}</blockquote>
+        </section>
+      } @else {
+        <section class="verse-section unfulfilled">
+          <mat-icon>schedule</mat-icon>
+          <p>Esta profecía no tiene registro de cumplimiento en el Nuevo Testamento. Su cumplimiento es histórico, previo a la venida de Cristo.</p>
+        </section>
+      }
+
+      <mat-divider />
+
+      <section class="description-section">
+        <h2 class="verse-label">
+          <mat-icon>info_outline</mat-icon>
+          Contexto y comentario
+        </h2>
+        <p class="description-text">{{ p.description }}</p>
+      </section>
+
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <mat-icon>search_off</mat-icon>
+    <p>Profecía no encontrada.</p>
+    <button mat-stroked-button (click)="volver()">Volver al inicio</button>
+  </div>
+}

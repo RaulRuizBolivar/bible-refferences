@@ -1,0 +1,39 @@
+<mat-card class="prophecy-card" [class]="'prophecy-card cat-border-' + prophecy.category">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ prophecy.title }}</mat-card-title>
+    <mat-card-subtitle>
+      <mat-chip-set>
+        <mat-chip [class]="'cat-chip cat-' + prophecy.category">
+          {{ prophecy.category }}
+        </mat-chip>
+        <mat-chip class="theme-chip">{{ prophecy.theme }}</mat-chip>
+      </mat-chip-set>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    <div class="reference-row">
+      <mat-icon class="ref-icon">history_edu</mat-icon>
+      <span class="ref-text">{{ prophecy.oldTestament.reference }}</span>
+    </div>
+    @if (prophecy.newTestament) {
+      <div class="reference-row">
+        <mat-icon class="ref-icon">auto_stories</mat-icon>
+        <span class="ref-text">{{ prophecy.newTestament.reference }}</span>
+      </div>
+    } @else {
+      <div class="reference-row unfulfilled-row">
+        <mat-icon class="ref-icon">schedule</mat-icon>
+        <span class="ref-text">Sin cumplimiento en el NT</span>
+      </div>
+    }
+    <p class="card-description">{{ prophecy.description | slice:0:160 }}…</p>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-button color="primary" (click)="abrirDetalles()">
+      <mat-icon>open_in_full</mat-icon>
+      Ver detalles
+    </button>
+  </mat-card-actions>
+</mat-card>

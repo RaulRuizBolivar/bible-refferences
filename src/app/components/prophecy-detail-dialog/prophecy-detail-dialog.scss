@@ -1,0 +1,84 @@
+.dialog-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 0;
+}
+
+.dialog-content {
+  padding-top: 8px;
+
+  .chip-row {
+    margin-bottom: 20px;
+  }
+}
+
+.verse-section {
+  padding: 16px 0;
+
+  h3.verse-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #5c6bc0;
+    margin: 0 0 10px 0;
+  }
+
+  .verse-ref {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 8px 0;
+    color: #546e7a;
+  }
+
+  blockquote.verse-text {
+    margin: 0;
+    padding: 12px 16px;
+    border-left: 3px solid #3f51b5;
+    background: #f3f4fb;
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #37474f;
+  }
+}
+
+.unfulfilled {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #78909c;
+  font-style: italic;
+  padding: 16px 0;
+
+  mat-icon { margin-top: 2px; flex-shrink: 0; }
+  p { margin: 0; line-height: 1.6; }
+}
+
+.description-section {
+  padding: 16px 0;
+
+  .description-text {
+    line-height: 1.75;
+    color: #546e7a;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+// Colores por categoría
+.cat-chip {
+  &.cat-mesiánica    { background: #e8f5e9 !important; color: #2e7d32 !important; font-weight: 500; }
+  &.cat-apocalíptica { background: #fce4ec !important; color: #880e4f !important; font-weight: 500; }
+  &.cat-histórica    { background: #e3f2fd !important; color: #0d47a1 !important; font-weight: 500; }
+}
+
+.theme-chip {
+  background: #f5f5f5 !important;
+  color: #546e7a !important;
+  font-size: 0.8rem !important;
+}

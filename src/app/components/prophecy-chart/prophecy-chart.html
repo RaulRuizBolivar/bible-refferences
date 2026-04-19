@@ -1,0 +1,67 @@
+<section class="chart-section">
+  <h2 class="chart-title">Profecía → Cumplimiento</h2>
+
+  <div class="legend">
+    <span class="legend-dot mesiánica"></span><span class="legend-label">Mesiánica</span>
+    <span class="legend-dot apocalíptica"></span><span class="legend-label">Apocalíptica</span>
+    <span class="legend-dot histórica"></span><span class="legend-label">Histórica</span>
+  </div>
+
+  <div class="svg-wrapper">
+    <svg
+      [attr.viewBox]="'0 0 ' + data.svgWidth + ' ' + data.svgHeight"
+      preserveAspectRatio="xMidYMid meet"
+      aria-label="Gráfico de profecías y cumplimientos bíblicos"
+    >
+      <!-- Column headers -->
+      <text [attr.x]="data.otHeaderX" y="30" text-anchor="middle" class="col-header">Antiguo Testamento</text>
+      <text [attr.x]="data.ntHeaderX" y="30" text-anchor="middle" class="col-header">Nuevo Testamento</text>
+
+      <!-- Bands (draw below bars) -->
+      @for (link of data.links; track link.id) {
+        <path
+          [attr.d]="link.path"
+          [attr.fill]="link.color"
+          class="band"
+          role="button"
+          tabindex="0"
+          [attr.aria-label]="link.title"
+          (click)="abrirProfecia(link.prophecy)"
+          (keydown.enter)="abrirProfecia(link.prophecy)"
+        >
+          <title>{{ link.title }}</title>
+        </path>
+      }
+
+      <!-- OT bars -->
+      @for (node of data.otNodes; track node.book) {
+        <rect
+          [attr.x]="OT_X" [attr.y]="node.y"
+          [attr.width]="OT_W" [attr.height]="node.h"
+          class="bar bar-ot" rx="3"
+        />
+        <text
+          [attr.x]="OT_X - 8"
+          [attr.y]="node.y + node.h / 2"
+          text-anchor="end" dominant-baseline="middle"
+          class="bar-label"
+        >{{ node.book }}</text>
+      }
+
+      <!-- NT bars -->
+      @for (node of data.ntNodes; track node.book) {
+        <rect
+          [attr.x]="NT_X" [attr.y]="node.y"
+          [attr.width]="NT_W" [attr.height]="node.h"
+          class="bar bar-nt" rx="3"
+        />
+        <text
+          [attr.x]="NT_X + NT_W + 8"
+          [attr.y]="node.y + node.h / 2"
+          text-anchor="start" dominant-baseline="middle"
+          class="bar-label"
+        >{{ node.book }}</text>
+      }
+    </svg>
+  </div>
+</section>
