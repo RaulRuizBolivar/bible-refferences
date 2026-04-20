@@ -1,5 +1,5 @@
 import { Component, inject, computed } from '@angular/core';
-import { CommonModule, TitleCasePipe } from '@angular/common';
+import { TitleCasePipe } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -52,7 +52,6 @@ const PAGE_CONFIG: Record<EntityType, PageConfig> = {
   selector: 'app-list',
   standalone: true,
   imports: [
-    CommonModule,
     TitleCasePipe,
     FormsModule,
     MatFormFieldModule,

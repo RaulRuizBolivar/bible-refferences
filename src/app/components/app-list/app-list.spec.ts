@@ -76,6 +76,14 @@ describe('AppList', () => {
     it('muestra chips de tipos', () => {
       expect(fixture.nativeElement.textContent).toContain('Tipología');
     });
+    it('limpiarFiltros limpia búsqueda y tipo en referencias', () => {
+      const svc = TestBed.inject(ReferencesService);
+      const spySearch = vi.spyOn(svc, 'setSearch');
+      const spyType = vi.spyOn(svc, 'setType');
+      fixture.componentInstance.limpiarFiltros();
+      expect(spySearch).toHaveBeenCalledWith('');
+      expect(spyType).toHaveBeenCalledWith(null);
+    });
   });
 
   describe('entityType=covenant', () => {
