@@ -1,0 +1,68 @@
+@if (reference; as r) {
+  <div class="detail-page">
+    <div class="detail-container">
+
+      <button mat-button class="back-btn" (click)="volver()">
+        <mat-icon>arrow_back</mat-icon>
+        Volver
+      </button>
+
+      <header class="detail-header">
+        <h1 class="detail-title">{{ r.title }}</h1>
+        <div class="meta-row">
+          <span [class]="'type-badge type-' + r.type">
+            <mat-icon class="badge-icon">{{ typeIcon(r.type) }}</mat-icon>
+            {{ r.type }}
+          </span>
+          <mat-chip-set>
+            <mat-chip class="theme-chip">{{ r.theme }}</mat-chip>
+          </mat-chip-set>
+          <div class="importance-stars" [title]="'Importancia: ' + r.importance + '/5'">
+            @for (s of [1,2,3,4,5]; track s) {
+              <mat-icon class="star" [class.filled]="s <= r.importance">star</mat-icon>
+            }
+          </div>
+        </div>
+      </header>
+
+      <mat-divider />
+
+      <section class="verse-section">
+        <h2 class="verse-label">
+          <mat-icon>history_edu</mat-icon>
+          Antiguo Testamento
+        </h2>
+        <p class="verse-ref">{{ r.verseB.reference }}</p>
+        <blockquote class="verse-text">{{ r.verseB.text }}</blockquote>
+      </section>
+
+      <mat-divider />
+
+      <section class="verse-section">
+        <h2 class="verse-label">
+          <mat-icon>auto_stories</mat-icon>
+          Nuevo Testamento
+        </h2>
+        <p class="verse-ref">{{ r.verseA.reference }}</p>
+        <blockquote class="verse-text">{{ r.verseA.text }}</blockquote>
+      </section>
+
+      <mat-divider />
+
+      <section class="description-section">
+        <h2 class="verse-label">
+          <mat-icon>info_outline</mat-icon>
+          Contexto y conexión
+        </h2>
+        <p class="description-text">{{ r.description }}</p>
+      </section>
+
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <mat-icon>search_off</mat-icon>
+    <p>Referencia no encontrada.</p>
+    <button mat-stroked-button (click)="volver()">Volver a referencias</button>
+  </div>
+}

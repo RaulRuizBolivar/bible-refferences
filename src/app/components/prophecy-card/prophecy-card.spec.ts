@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { provideRouter } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { ProphecyCard } from './prophecy-card';
@@ -11,6 +12,7 @@ const profeciaConNT: Prophecy = {
   title: 'Nacimiento virginal del Mesías',
   category: 'mesiánica',
   theme: 'nacimiento',
+  importance: 5,
   oldTestament: {
     reference: 'Isaías 7:14',
     text: 'He aquí que la virgen concebirá...'
@@ -29,14 +31,12 @@ const profeciasinNT: Prophecy = {
   description: 'Profecía sin cumplimiento en el NT.'
 };
 
-const dialogOpen = vi.fn();
-
 async function crearFixture(prophecy: Prophecy): Promise<ComponentFixture<ProphecyCard>> {
   await TestBed.configureTestingModule({
     imports: [ProphecyCard],
     providers: [
       provideAnimationsAsync(),
-      { provide: MatDialog, useValue: { open: dialogOpen } }
+      provideRouter([]),
     ]
   }).compileComponents();
 
@@ -76,13 +76,12 @@ describe('ProphecyCard', () => {
       expect(fixture.nativeElement.textContent).toContain('Mateo 1:22-23');
     });
 
-    it('debe abrir el diálogo al pulsar "Ver detalles"', () => {
+    it('debe navegar al detalle al pulsar "Ver detalles"', () => {
+      const router = TestBed.inject(Router);
+      const spy = vi.spyOn(router, 'navigate');
       const boton = fixture.debugElement.query(By.css('button[color="primary"]'));
       boton.nativeElement.click();
-      expect(dialogOpen).toHaveBeenCalledWith(
-        expect.any(Function),
-        expect.objectContaining({ data: { prophecy: profeciaConNT } })
-      );
+      expect(spy).toHaveBeenCalledWith(['/prophecy', 1]);
     });
   });
 

@@ -1,0 +1,95 @@
+<section class="chart-section">
+  <header class="chart-header">
+    <h1 class="chart-title">AT → NT · Mapa de conexiones bíblicas</h1>
+    <p class="chart-subtitle">Profecías y referencias cruzadas — haz clic en un arco para ver el detalle</p>
+  </header>
+
+  <div class="legend-groups">
+    <div class="legend-group">
+      <span class="legend-group-label">Profecías</span>
+      @for (item of legendProphecy; track item.key) {
+        <span class="legend-dot" [style.background]="item.color"></span>
+        <span class="legend-label">{{ item.label }}</span>
+      }
+    </div>
+    <div class="legend-group">
+      <span class="legend-group-label">Referencias cruzadas</span>
+      @for (item of legendReference; track item.key) {
+        <span class="legend-dot" [style.background]="item.color"></span>
+        <span class="legend-label">{{ item.label }}</span>
+      }
+    </div>
+  </div>
+
+  <div class="svg-wrapper">
+    <svg
+      [attr.viewBox]="'0 0 ' + data.svgW + ' ' + data.svgH"
+      preserveAspectRatio="xMidYMid meet"
+      aria-label="Mapa de arcos de conexiones bíblicas AT–NT"
+    >
+      <!-- Background -->
+      <rect width="100%" height="100%" fill="transparent" />
+
+      <!-- OT / NT section labels -->
+      <text [attr.x]="data.dividerX / 2" y="18" text-anchor="middle" class="section-label">
+        Antiguo Testamento
+      </text>
+      <text [attr.x]="data.dividerX + (data.svgW - data.dividerX) / 2" y="18" text-anchor="middle" class="section-label">
+        Nuevo Testamento
+      </text>
+
+      <!-- OT / NT divider -->
+      <line
+        [attr.x1]="data.dividerX" y1="24"
+        [attr.x2]="data.dividerX" [attr.y2]="BASE_Y"
+        class="divider-line"
+      />
+
+      <!-- Arcs -->
+      @for (arc of data.arcs; track arc.id) {
+        <path
+          [attr.d]="arc.path"
+          [attr.stroke]="arc.color"
+          fill="none"
+          class="arc"
+          role="button"
+          tabindex="0"
+          [attr.aria-label]="arc.title"
+          (click)="abrirItem(arc.item)"
+          (keydown.enter)="abrirItem(arc.item)"
+        ><title>{{ arc.title }}</title></path>
+      }
+
+      <!-- Baseline -->
+      <line
+        [attr.x1]="PAD_X" [attr.y1]="BASE_Y"
+        [attr.x2]="data.svgW - PAD_X" [attr.y2]="BASE_Y"
+        class="baseline"
+      />
+
+      <!-- Histogram bars -->
+      @for (bar of data.bars; track bar.book) {
+        @if (bar.height > 0) {
+          <rect
+            [attr.x]="bar.x + 0.5"
+            [attr.y]="BASE_Y + 1"
+            [attr.width]="BOOK_W - 1"
+            [attr.height]="bar.height"
+            [attr.fill]="bar.isOT ? '#7b8dbf' : '#5a9a6e'"
+            fill-opacity="0.9"
+          />
+        }
+      }
+
+      <!-- Book labels (only for books with connections) -->
+      @for (label of data.labels; track label.abbr) {
+        <text
+          [attr.x]="label.x"
+          [attr.y]="BASE_Y + BAR_MAX_H + 14"
+          text-anchor="middle"
+          [class]="label.isOT ? 'book-label ot-label' : 'book-label nt-label'"
+        >{{ label.abbr }}</text>
+      }
+    </svg>
+  </div>
+</section>

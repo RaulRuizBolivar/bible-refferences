@@ -1,0 +1,113 @@
+.chart-section {
+  padding: 28px 0 32px;
+  background: transparent;
+}
+
+.chart-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.chart-title {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--mat-sys-on-surface, #1c1b1f);
+}
+
+.chart-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--mat-sys-on-surface-variant, #49454f);
+}
+
+.legend-groups {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.legend-group {
+  display: flex;
+  align-items: center;
+  gap: 5px 8px;
+  flex-wrap: wrap;
+}
+
+.legend-group-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #444;
+  margin-right: 2px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.legend-label {
+  font-size: 11px;
+  color: #666;
+}
+
+.svg-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  max-height: 100vh;
+  height: auto;
+  min-width: 600px;
+
+  .section-label {
+    font-size: 10px;
+    fill: #888;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .divider-line {
+    stroke: #bbb;
+    stroke-width: 1;
+    stroke-dasharray: 3 5;
+  }
+
+  .arc {
+    stroke-width: 2;
+    stroke-opacity: 0.6;
+    cursor: pointer;
+    transition: stroke-opacity 0.12s ease, stroke-width 0.12s ease;
+
+    &:hover,
+    &:focus {
+      stroke-opacity: 1;
+      stroke-width: 3.5;
+      outline: none;
+    }
+  }
+
+  .baseline {
+    stroke: #999;
+    stroke-width: 1;
+  }
+
+  .book-label {
+    font-size: 8.5px;
+    font-family: monospace;
+
+    &.ot-label { fill: #3a4a80; }
+    &.nt-label { fill: #2d5a3d; }
+  }
+}

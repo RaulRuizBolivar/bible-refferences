@@ -8,7 +8,6 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { PropheciesService } from '../../services/prophecies';
 import { ProphecyCard } from '../prophecy-card/prophecy-card';
-import { ProphecyChart } from '../prophecy-chart/prophecy-chart';
 import { ProphecyCategory } from '../../models/prophecy.model';
 
 @Component({
@@ -23,7 +22,6 @@ import { ProphecyCategory } from '../../models/prophecy.model';
     MatChipsModule,
     MatButtonModule,
     ProphecyCard,
-    ProphecyChart,
     TitleCasePipe
   ],
   templateUrl: './prophecies-list.html',

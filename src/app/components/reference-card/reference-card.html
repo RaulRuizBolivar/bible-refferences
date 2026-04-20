@@ -1,0 +1,38 @@
+<mat-card class="reference-card" [class]="'reference-card type-border-' + reference.type">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ reference.title }}</mat-card-title>
+    <div class="importance-stars" [title]="'Importancia: ' + reference.importance + '/5'">
+      @for (s of [1,2,3,4,5]; track s) {
+        <mat-icon class="star" [class.filled]="s <= reference.importance">star</mat-icon>
+      }
+    </div>
+    <mat-card-subtitle>
+      <mat-chip-set>
+        <mat-chip [class]="'type-chip type-' + reference.type">
+          <mat-icon class="chip-icon">{{ typeIcon(reference.type) }}</mat-icon>
+          {{ reference.type }}
+        </mat-chip>
+        <mat-chip class="theme-chip">{{ reference.theme }}</mat-chip>
+      </mat-chip-set>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    <div class="reference-row">
+      <mat-icon class="ref-icon">history_edu</mat-icon>
+      <span class="ref-text">{{ reference.verseB.reference }}</span>
+    </div>
+    <div class="reference-row">
+      <mat-icon class="ref-icon nt-icon">auto_stories</mat-icon>
+      <span class="ref-text">{{ reference.verseA.reference }}</span>
+    </div>
+    <p class="card-description">{{ reference.description | slice:0:160 }}…</p>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-button color="primary" (click)="abrirDetalles()">
+      <mat-icon>open_in_full</mat-icon>
+      Ver detalles
+    </button>
+  </mat-card-actions>
+</mat-card>

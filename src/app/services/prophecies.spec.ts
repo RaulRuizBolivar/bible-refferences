@@ -15,7 +15,7 @@ describe('PropheciesService', () => {
   });
 
   it('debe devolver todas las profecías sin filtros activos', () => {
-    expect(service.filtered().length).toBe(15);
+    expect(service.filtered().length).toBe(61);
   });
 
   it('debe filtrar correctamente por categoría mesiánica', () => {
@@ -39,13 +39,18 @@ describe('PropheciesService', () => {
     resultado.forEach(p => expect(p.category).toBe('histórica'));
   });
 
-  it('debe filtrar por texto en el título', () => {
+  it('debe filtrar por texto en el título o tema', () => {
     service.setSearch('nacimiento');
     const resultado = service.filtered();
     expect(resultado.length).toBeGreaterThan(0);
-    resultado.forEach(p =>
-      expect(p.title.toLowerCase()).toContain('nacimiento')
-    );
+    resultado.forEach(p => {
+      const coincide =
+        p.title.toLowerCase().includes('nacimiento') ||
+        p.theme.toLowerCase().includes('nacimiento') ||
+        p.oldTestament.reference.toLowerCase().includes('nacimiento') ||
+        (p.newTestament?.reference.toLowerCase().includes('nacimiento') ?? false);
+      expect(coincide).toBe(true);
+    });
   });
 
   it('debe filtrar por referencia del Antiguo Testamento', () => {
@@ -77,7 +82,7 @@ describe('PropheciesService', () => {
     service.setSearch('destrucción');
     service.setCategory(null);
     service.setSearch('');
-    expect(service.filtered().length).toBe(15);
+    expect(service.filtered().length).toBe(61);
   });
 
   it('debe exponer las tres categorías disponibles', () => {

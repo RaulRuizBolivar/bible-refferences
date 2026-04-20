@@ -25,6 +25,6 @@ describe('App', () => {
     await fixture.whenStable();
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('Profecías Bíblicas Católicas');
+    expect(compiled.textContent).toContain('Biblia Católica');
   });
 });

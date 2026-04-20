@@ -3,38 +3,38 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideRouter } from '@angular/router';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { signal } from '@angular/core';
-import { PropheciesList } from './prophecies-list';
-import { PropheciesService } from '../../services/prophecies';
+import { ReferencesList } from './references-list';
+import { ReferencesService } from '../../services/references';
 
-describe('PropheciesList', () => {
-  let component: PropheciesList;
-  let fixture: ComponentFixture<PropheciesList>;
-  const setCategory = vi.fn();
+describe('ReferencesList', () => {
+  let component: ReferencesList;
+  let fixture: ComponentFixture<ReferencesList>;
+  const setType = vi.fn();
   const setSearch = vi.fn();
   const filteredSignal = signal<any[]>([]);
-  const activeCategorySignal = signal<any>(null);
+  const activeTypeSignal = signal<any>(null);
 
   const mockService = {
-    setCategory,
+    setType,
     setSearch,
     filtered: filteredSignal,
-    activeCategory: activeCategorySignal,
-    categories: ['mesiánica', 'apocalíptica', 'histórica'] as const
+    activeType: activeTypeSignal,
+    types: ['tipología', 'cita directa', 'paralelo temático', 'alusión'] as const,
   };
 
   beforeEach(async () => {
     vi.clearAllMocks();
 
     await TestBed.configureTestingModule({
-      imports: [PropheciesList],
+      imports: [ReferencesList],
       providers: [
         provideAnimationsAsync(),
         provideRouter([]),
-        { provide: PropheciesService, useValue: mockService }
-      ]
+        { provide: ReferencesService, useValue: mockService },
+      ],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PropheciesList);
+    fixture = TestBed.createComponent(ReferencesList);
     component = fixture.componentInstance;
     await fixture.whenStable();
     fixture.detectChanges();
@@ -46,34 +46,34 @@ describe('PropheciesList', () => {
 
   it('debe mostrar el título de la página', () => {
     const texto = fixture.nativeElement.textContent;
-    expect(texto).toContain('Profecías de la Biblia Católica');
+    expect(texto).toContain('Referencias Cruzadas de la Biblia');
   });
 
   it('debe llamar a setSearch al buscar', () => {
-    component.onSearch('Isaías');
-    expect(setSearch).toHaveBeenCalledWith('Isaías');
+    component.onSearch('Génesis');
+    expect(setSearch).toHaveBeenCalledWith('Génesis');
   });
 
-  it('debe llamar a setCategory con la categoría seleccionada', () => {
-    component.seleccionarCategoria('mesiánica');
-    expect(setCategory).toHaveBeenCalledWith('mesiánica');
+  it('debe llamar a setType con el tipo seleccionado', () => {
+    component.seleccionarTipo('tipología');
+    expect(setType).toHaveBeenCalledWith('tipología');
   });
 
-  it('debe llamar a setCategory(null) para mostrar todas', () => {
-    component.seleccionarCategoria(null);
-    expect(setCategory).toHaveBeenCalledWith(null);
+  it('debe llamar a setType(null) para mostrar todas', () => {
+    component.seleccionarTipo(null);
+    expect(setType).toHaveBeenCalledWith(null);
   });
 
   it('debe limpiar todos los filtros al llamar a limpiarFiltros()', () => {
-    component.searchValue = 'Zacarías';
+    component.searchValue = 'Adán';
     component.limpiarFiltros();
     expect(component.searchValue).toBe('');
     expect(setSearch).toHaveBeenCalledWith('');
-    expect(setCategory).toHaveBeenCalledWith(null);
+    expect(setType).toHaveBeenCalledWith(null);
   });
 
   it('debe mostrar el estado vacío cuando no hay resultados', () => {
     const texto = fixture.nativeElement.textContent;
-    expect(texto).toContain('No se encontraron profecías');
+    expect(texto).toContain('No se encontraron referencias');
   });
 });

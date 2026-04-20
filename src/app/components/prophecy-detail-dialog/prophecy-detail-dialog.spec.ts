@@ -10,6 +10,7 @@ const profeciaConNT: Prophecy = {
   title: 'Nacimiento virginal del Mesías',
   category: 'mesiánica',
   theme: 'nacimiento',
+  importance: 5,
   oldTestament: {
     reference: 'Isaías 7:14',
     text: 'He aquí que la virgen concebirá y dará a luz un hijo.'

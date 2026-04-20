@@ -984,4 +984,518 @@ export const PROPHECIES: Prophecy[] = [
     newTestament: null,
     description: 'Ezequiel profetizó en detalle la destrucción de Tiro por sucesivos conquistadores: Nabucodonosor arrasó la ciudad continental y Alejandro Magno, arrojando los escombros al mar, construyó una calzada para atacar la isla. La ciudad nunca recobró su antiguo esplendor.',
   },
+
+  // ── MESIÁNICAS · LINAJE (complemento) ────────────────────────────
+  {
+    id: 62,
+    title: 'La simiente de Isaac: la promesa renovada',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 3,
+    oldTestament: {
+      reference: 'Génesis 26:2-4',
+      text: 'Y se le apareció el Señor, y le dijo: No desciendas a Egipto... Multiplicaré tu descendencia como las estrellas del cielo, y daré a tu descendencia todas estas tierras; y todas las naciones de la tierra serán benditas en tu simiente.',
+    },
+    newTestament: {
+      reference: 'Hebreos 11:18',
+      text: 'Habiéndosele dicho: En Isaac te será llamada descendencia.',
+    },
+    description: 'La promesa hecha a Isaac confirma que la línea mesiánica continuaría específicamente a través de él, descartando a Ismael. Hebreos la cita en el contexto de la fe de Abraham, que esperó contra toda esperanza la descendencia prometida. Lucas traza la genealogía de Jesús pasando por Isaac.',
+  },
+  {
+    id: 63,
+    title: 'La simiente de Jacob y la bendición universal',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 3,
+    oldTestament: {
+      reference: 'Génesis 28:13-14',
+      text: 'Y he aquí, el Señor estaba en lo alto de ella, y dijo: Yo soy el Señor, el Dios de Abraham tu padre, y el Dios de Isaac; la tierra en que estás acostado te la daré a ti y a tu descendencia... y todas las familias de la tierra serán benditas en ti y en tu simiente.',
+    },
+    newTestament: {
+      reference: 'Lucas 3:34',
+      text: 'Hijo de Jacob, hijo de Isaac, hijo de Abraham, hijo de Taré, hijo de Nacor.',
+    },
+    description: 'En Betel, Dios renueva con Jacob la promesa hecha a Abraham e Isaac: de su simiente vendrá la bendición para todas las familias de la tierra. Lucas teje a Jacob en la genealogía de Jesús, el descendiente en quien se cumple la triple promesa patriarcal.',
+  },
+
+  // ── MESIÁNICAS · MINISTERIO (complemento) ────────────────────────
+  {
+    id: 64,
+    title: 'El profeta semejante a Moisés',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Deuteronomio 18:15-19',
+      text: 'Profeta de en medio de ti, de tus hermanos, como yo, te levantará el Señor tu Dios; a él oiréis... El Señor me dijo: Les levantaré un profeta de en medio de sus hermanos, como tú; y pondré mis palabras en su boca, y él les hablará todo lo que yo le mandare.',
+    },
+    newTestament: {
+      reference: 'Juan 6:14',
+      text: 'Entonces los hombres, viendo la señal que Jesús había hecho, dijeron: Este verdaderamente es el profeta que había de venir al mundo.',
+    },
+    description: 'Moisés profetizó un sucesor profético definitivo que recibiría las palabras de Dios y hablaría en su nombre. La multitud que presenció la multiplicación de los panes reconoció en Jesús al profeta prometido. Pedro citará este texto en Pentecostés identificándolo con Jesús resucitado (Hch 3:22).',
+  },
+  {
+    id: 65,
+    title: 'Verán sin ver: el endurecimiento de Israel',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 6:9-10',
+      text: 'Y él dijo: Anda, y di a este pueblo: Oíd bien, y no entendáis; ved por cierto, mas no comprendáis. Engruesa el corazón de este pueblo, y agrava sus oídos, y ciega sus ojos, para que no vea con sus ojos, ni oiga con sus oídos, ni su corazón entienda.',
+    },
+    newTestament: {
+      reference: 'Mateo 13:14-15',
+      text: 'Y se cumple en ellos la profecía de Isaías, que dice: De oído oiréis, y no entenderéis; y viendo veréis, y no percibiréis. Porque el corazón de este pueblo se ha engrosado, y con los oídos oyeron pesadamente, y sus ojos han cerrado.',
+    },
+    description: 'Isaías recibió la misión de predicar a un pueblo con el corazón endurecido. Jesús ve en el rechazo de sus contemporáneos el cumplimiento de este oráculo y lo cita para explicar por qué enseña en parábolas. Juan lo aplicará también al rechazo de Jesús a pesar de sus señales (Jn 12:40).',
+  },
+  {
+    id: 66,
+    title: 'Luz para Galilea de los gentiles',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 9:1-2',
+      text: 'Mas no habrá siempre oscuridad para la que está en angustia... El pueblo que andaba en oscuridad vio una gran luz; los que moraban en tierra de sombra de muerte, una luz resplandeció sobre ellos.',
+    },
+    newTestament: {
+      reference: 'Mateo 4:14-16',
+      text: 'Para que se cumpliese lo dicho por el profeta Isaías, cuando dijo: Tierra de Zabulón y tierra de Neftalí, camino del mar, al otro lado del Jordán, Galilea de los gentiles; el pueblo asentado en tinieblas vio una gran luz; y a los que estaban sentados en región de sombra de muerte, una luz les resplandeció.',
+    },
+    description: 'Isaías anuncia que la región de Galilea, zona fronteriza con los gentiles y considerada menos pura, sería la primera en ver la gran luz mesiánica. Mateo cumple con precisión esta geografía profética: el ministerio de Jesús comienza en Galilea, en Cafarnaúm junto al lago, en la región de Zabulón y Neftalí.',
+  },
+  {
+    id: 67,
+    title: 'El Espíritu septiforme sobre el renuevo de Jesé',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 11:1-2',
+      text: 'Saldrá una vara del tronco de Isaí, y un vástago retoñará de sus raíces. Y reposará sobre él el Espíritu del Señor; Espíritu de sabiduría y de inteligencia, Espíritu de consejo y de poder, Espíritu de conocimiento y de temor del Señor.',
+    },
+    newTestament: {
+      reference: 'Mateo 3:16-17',
+      text: 'Y Jesús, después que fue bautizado, subió luego del agua; y he aquí los cielos le fueron abiertos, y vio al Espíritu de Dios que descendía como paloma, y venía sobre él. Y hubo una voz de los cielos, que decía: Este es mi Hijo amado, en quien tengo complacencia.',
+    },
+    description: 'Isaías profetiza el descenso del Espíritu con su plenitud septiforme sobre el vástago davídico. En el bautismo de Jesús esta profecía se cumple visiblemente: el Espíritu desciende sobre él en forma de paloma y la voz del Padre lo confirma como Hijo amado. Es la manifestación trinitaria del comienzo del ministerio mesiánico.',
+  },
+  {
+    id: 68,
+    title: 'El rey ungido en el monte santo de Sión',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 2:6',
+      text: 'Pero yo he puesto mi rey sobre Sión, mi santo monte.',
+    },
+    newTestament: {
+      reference: 'Juan 18:37',
+      text: 'Le dijo entonces Pilato: ¿Luego, eres tú rey? Respondió Jesús: Tú dices que yo soy rey. Yo para esto he nacido, y para esto he venido al mundo, para dar testimonio a la verdad; todo aquel que es de la verdad, oye mi voz.',
+    },
+    description: 'El Salmo 2 proclama la entronización del rey mesiánico en Sión ante la oposición de las naciones. Jesús confirma su realeza ante Pilato, pero lo hace redefiniendo la naturaleza de ese reinado: un reino de verdad, no de violencia. El Salmo 2 late detrás de la escena del juicio ante el representante del poder romano.',
+  },
+
+  // ── MESIÁNICAS · PASIÓN (complemento) ────────────────────────────
+  {
+    id: 69,
+    title: 'Odiado sin causa',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 69:4',
+      text: 'Se han aumentado más que los cabellos de mi cabeza los que me aborrecen sin causa; se han hecho poderosos mis enemigos, los que me destruyen sin tener por qué; y lo que no robé he de restituir.',
+    },
+    newTestament: {
+      reference: 'Juan 15:25',
+      text: 'Pero esto es para que se cumpla la palabra que está escrita en su ley: Sin causa me aborrecieron.',
+    },
+    description: 'El salmista llora el odio gratuito de sus enemigos. Jesús cita este versículo para interpretar el rechazo que sufre: su persecución no tiene base racional ni moral, lo que paradójicamente revela la culpa de quienes lo persiguen. El odio sin causa al inocente es el colmo de la iniquidad que la Pasión desenmascara.',
+  },
+  {
+    id: 70,
+    title: 'El sol se oscurece al mediodía',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Amós 8:9',
+      text: 'Acontecerá en aquel día, dice el Señor Dios, que haré que se ponga el sol a mediodía, y cubriré de tinieblas la tierra en el día claro.',
+    },
+    newTestament: {
+      reference: 'Mateo 27:45',
+      text: 'Y desde la hora sexta hubo tinieblas sobre toda la tierra hasta la hora novena.',
+    },
+    description: 'Amós anuncia el signo cósmico del día del Señor: el sol que se pone al mediodía en pleno día claro. Durante la crucifixión, desde la hora sexta hasta la novena (de 12 a 3 de la tarde), una oscuridad cubrió toda la tierra. El cielo mismo acompaña el sufrimiento del Mesías con el signo profetizado.',
+  },
+
+  // ── MESIÁNICAS · RESURRECCIÓN (complemento) ──────────────────────
+  {
+    id: 71,
+    title: 'Subió a lo alto llevando cautiva la cautividad',
+    category: 'mesiánica',
+    theme: 'resurrección',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 68:18',
+      text: 'Subiste a lo alto, llevaste cautiva la cautividad, tomaste dones para los hombres, y también para los rebeldes, para que habite entre ellos el Señor Dios.',
+    },
+    newTestament: {
+      reference: 'Efesios 4:8',
+      text: 'Por lo cual dice: Subiendo a lo alto, llevó cautiva la cautividad, y dio dones a los hombres.',
+    },
+    description: 'El Salmo 68 canta la procesión triunfal de Yahvé al monte Sión. Pablo lo aplica a la Ascensión de Cristo: al subir a los cielos, Cristo liberó a los cautivos del poder del pecado y la muerte, y distribuyó los dones del Espíritu (Pentecostés). La victoria pascual se convierte en gracia derramada sobre la Iglesia.',
+  },
+
+  // ── MESIÁNICAS · SACERDOCIO Y ALIANZA (complemento) ──────────────
+  {
+    id: 72,
+    title: 'Tu trono, oh Dios, es eterno',
+    category: 'mesiánica',
+    theme: 'alianza',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 45:6-7',
+      text: 'Tu trono, oh Dios, es eterno y para siempre; cetro de justicia es el cetro de tu reino. Has amado la justicia y aborrecido la maldad; por tanto, te ungió Dios, el Dios tuyo, con óleo de alegría más que a tus compañeros.',
+    },
+    newTestament: {
+      reference: 'Hebreos 1:8-9',
+      text: 'Mas del Hijo dice: Tu trono, oh Dios, por el siglo del siglo; cetro de equidad es el cetro de tu reino. Has amado la justicia, y aborrecido la maldad, por lo cual te ungió Dios, el Dios tuyo, con óleo de alegría más que a tus compañeros.',
+    },
+    description: 'El Salmo 45, cántico nupcial del rey de Israel, contiene la afirmación más directa de la divinidad del Mesías en el AT: el rey es llamado "Dios" y su trono es eterno. Hebreos lo aplica explícitamente al Hijo de Dios, convirtiéndolo en uno de los argumentos más fuertes de la carta para la divinidad de Cristo.',
+  },
+  {
+    id: 73,
+    title: 'Luz para las naciones: salvación hasta los confines',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 49:6',
+      text: 'Poco es para mí que tú seas mi siervo para levantar las tribus de Jacob, y para que restaures el remanente de Israel; también te di por luz de las naciones, para que seas mi salvación hasta lo postrero de la tierra.',
+    },
+    newTestament: {
+      reference: 'Hechos 13:47',
+      text: 'Porque así nos ha mandado el Señor, diciendo: Te he puesto para luz de los gentiles, a fin de que seas para salvación hasta lo último de la tierra.',
+    },
+    description: 'El segundo Cántico del Siervo amplía la misión mesiánica más allá de Israel hasta los confines de la tierra. Pablo y Bernabé citan este texto en Antioquía de Pisidia para justificar la misión a los gentiles. Simeón lo había cantado ya en el templo al presentar al niño Jesús (Lc 2:32): la universalidad misionera ya está en el Siervo.',
+  },
+
+  // ── HISTÓRICAS (complemento) ─────────────────────────────────────
+  {
+    id: 74,
+    title: 'Alejandro Magno y los cuatro reinos helenísticos',
+    category: 'histórica',
+    theme: 'caída de imperios',
+    importance: 4,
+    oldTestament: {
+      reference: 'Daniel 11:3-4',
+      text: 'Y se levantará un rey valiente, el cual dominará con gran poder y hará su voluntad. Pero cuando se haya levantado, su reino será quebrantado y repartido hacia los cuatro vientos del cielo, no a sus descendientes, ni según el dominio con que él dominó; porque su reino será arrancado, y será para otros fuera de ellos.',
+    },
+    newTestament: null,
+    description: 'Daniel, escribiendo en el siglo VI a.C., describe a un rey valioso cuyo imperio se quebrantará al morir y se repartirá en cuatro partes para otras personas, no para sus herederos directos. Alejandro Magno murió en 323 a.C. sin sucesor designado; sus generales (los Diádocos) repartieron el imperio en cuatro reinos, exactamente según la profecía.',
+  },
+  {
+    id: 75,
+    title: 'Destrucción de Nínive, capital de Asiria',
+    category: 'histórica',
+    theme: 'caída de imperios',
+    importance: 3,
+    oldTestament: {
+      reference: 'Nahúm 1:8; 3:7',
+      text: 'Mas con inundación impetuosa consumirá a sus adversarios, y tinieblas perseguirán a sus enemigos... Y acontecerá que todos los que te vieren se apartarán de ti, y dirán: Nínive es destruida; ¿quién se compadecerá de ella?',
+    },
+    newTestament: null,
+    description: 'El profeta Nahúm anunció la caída total de Nínive, la poderosa capital asiria que había destruido Samaria en 722 a.C. En 612 a.C., una coalición medo-babilónica tomó la ciudad; las crónicas babilónicas confirman que una inundación del río Khoser debilitó las murallas, cumpliendo el detalle profético. Nínive jamás fue reconstruida.',
+  },
+
+  // ── MESIÁNICAS · NACIMIENTO (complemento 2) ──────────────────────
+  {
+    id: 77,
+    title: 'Los reyes traerán presentes al Hijo del rey',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 72:10-11',
+      text: 'Los reyes de Tarsis y de las costas traerán presentes; los reyes de Sabá y de Seba ofrecerán dones. Todos los reyes se postrarán ante él; todas las naciones le servirán.',
+    },
+    newTestament: {
+      reference: 'Mateo 2:11',
+      text: 'Y al entrar en la casa, vieron al niño con su madre María, y postrándose, lo adoraron; y abriendo sus tesoros, le ofrecieron presentes: oro, incienso y mirra.',
+    },
+    description: 'El Salmo 72, oración por el rey de Israel, describe a reyes lejanos postrados ante él con presentes. Los magos de Oriente, representantes de los sabios del mundo, actualizan esta imagen al postrarse ante el niño de Belén y ofrecer sus dones simbólicos.',
+  },
+  {
+    id: 78,
+    title: 'Vendrán con oro e incienso',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 60:6',
+      text: 'La multitud de camellos te cubrirá, dromedarios de Madián y de Efa; vendrán todos los de Sabá, trayendo oro e incienso, y publicando alabanzas de Jehová.',
+    },
+    newTestament: {
+      reference: 'Mateo 2:11',
+      text: 'Y abriendo sus tesoros, le ofrecieron presentes: oro, incienso y mirra.',
+    },
+    description: 'Isaías profetiza que caravanas del oriente llegarán con oro e incienso para la Sión restaurada, cantando las alabanzas del Señor. Mateo ve en los magos y sus dones el primer destello de ese cumplimiento universal: el Mesías nacido atrae a los sabios de las naciones con los mismos elementos que Isaías había profetizado.',
+  },
+  {
+    id: 79,
+    title: 'Alégrate, hija de Sión: el Señor está en medio de ti',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 4,
+    oldTestament: {
+      reference: 'Sofonías 3:14-17',
+      text: 'Canta, oh hija de Sión; da voces de júbilo, oh Israel; gózate y regocíjate de todo corazón, hija de Jerusalén. El Señor ha apartado tus juicios, ha echado fuera tus enemigos; el Rey de Israel, el Señor, está en medio de ti.',
+    },
+    newTestament: {
+      reference: 'Lucas 1:28-32',
+      text: 'Y entrando el ángel en donde ella estaba, dijo: ¡Salve, muy favorecida! El Señor es contigo. Y el ángel le dijo: No temas, María, porque has hallado gracia delante de Dios. Y ahora, concebirás en tu vientre y darás a luz un hijo, y llamarás su nombre Jesús. Este será grande, y será llamado Hijo del Altísimo.',
+    },
+    description: 'El saludo del ángel a María reproduce con precisión llamativa el lenguaje de Sofonías a la hija de Sión: alegría, presencia del Señor, miedo apaciguado. Los Padres de la Iglesia identificaron en María a la "hija de Sión" que personifica a Israel. La Encarnación es la llegada definitiva del Rey al corazón de su pueblo.',
+  },
+  {
+    id: 80,
+    title: 'Dios se manifestó en la tierra',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 4,
+    oldTestament: {
+      reference: 'Baruc 3:37-4:1',
+      text: 'Después de esto apareció en la tierra y convivió con los hombres. Este es nuestro Dios; no hay otro que se le pueda comparar. Halló todos los caminos de la sabiduría y la dio a Jacob su siervo, a Israel su amado.',
+    },
+    newTestament: {
+      reference: 'Juan 1:14',
+      text: 'Y aquel Verbo fue hecho carne, y habitó entre nosotros (y vimos su gloria, gloria como del unigénito del Padre), lleno de gracia y de verdad.',
+    },
+    description: 'Baruc, libro deuterocanonical del canon católico, afirma que la Sabiduría de Dios "apareció en la tierra y convivió con los hombres". Juan declara que el Logos eterno se hizo carne y habitó entre nosotros. La Iglesia ve en Baruc una de las preparaciones más directas del misterio de la Encarnación en el Antiguo Testamento.',
+  },
+
+  // ── MESIÁNICAS · MINISTERIO (complemento 2) ──────────────────────
+  {
+    id: 81,
+    title: 'Mi casa será llamada casa de oración para todas las naciones',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 56:7',
+      text: 'Yo los llevaré a mi santo monte, y los recrearé en mi casa de oración; sus holocaustos y sus sacrificios serán aceptos sobre mi altar; porque mi casa será llamada casa de oración para todos los pueblos.',
+    },
+    newTestament: {
+      reference: 'Mateo 21:13',
+      text: 'Y les dijo: Escrito está: Mi casa, casa de oración será llamada; mas vosotros la habéis hecho cueva de ladrones.',
+    },
+    description: 'Isaías profetiza que el Templo sería casa de oración no solo para Israel sino para todos los pueblos. Jesús al expulsar a los mercaderes cita esta profecía: la purificación del Templo no es un gesto de ira espontáneo sino el cumplimiento de la destinación universal del santuario. Miqueas ("cueva de ladrones") completa la cita.',
+  },
+  {
+    id: 82,
+    title: 'De la boca de los niños perfeccionaste la alabanza',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 8:2',
+      text: 'De la boca de los niños y de los que maman, fundaste la fortaleza, a causa de tus enemigos, para hacer callar al enemigo y al vengativo.',
+    },
+    newTestament: {
+      reference: 'Mateo 21:16',
+      text: 'Y le dijeron: ¿Oyes lo que éstos dicen? Y Jesús les dijo: Sí; ¿nunca leísteis: De la boca de los niños y de los que maman perfeccionaste la alabanza?',
+    },
+    description: 'El Salmo 8 atribuye a la alabanza de los niños una fuerza que silencia a los enemigos de Dios. Cuando los sumos sacerdotes se escandalizan de los niños que aclamaban a Jesús en el Templo, Jesús les responde con este salmo: la aclamación espontánea de los pequeños cumple la profecía y revela lo que los sabios rechazan.',
+  },
+  {
+    id: 83,
+    title: 'Yo mismo buscaré a mis ovejas dispersas',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Ezequiel 34:11-16',
+      text: 'Porque así ha dicho el Señor: He aquí, yo mismo iré a buscar mis ovejas, y las reconoceré. Como reconoce su rebaño el pastor el día que está en medio de sus ovejas esparcidas, así reconoceré mis ovejas, y las libraré de todos los lugares en que fueron esparcidas. Yo apacentaré mis ovejas.',
+    },
+    newTestament: {
+      reference: 'Juan 10:11',
+      text: 'Yo soy el buen pastor; el buen pastor su vida da por las ovejas.',
+    },
+    description: 'Ezequiel 34 es uno de los oráculos más vigorosos del AT: Yahvé mismo pastoreará a su pueblo en lugar de los pastores corruptos. Jesús al proclamarse el Buen Pastor no está usando una metáfora genérica: está afirmando ser el cumplimiento de la promesa divina que Ezequiel había profetizado. Dios venía personalmente a buscar sus ovejas.',
+  },
+
+  // ── MESIÁNICAS · PASIÓN (complemento 2) ──────────────────────────
+  {
+    id: 84,
+    title: 'En tus manos encomiendo mi espíritu',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 31:5',
+      text: 'En tus manos encomiendo mi espíritu; tú me has redimido, oh Señor, Dios de verdad.',
+    },
+    newTestament: {
+      reference: 'Lucas 23:46',
+      text: 'Entonces Jesús, clamando a gran voz, dijo: Padre, en tus manos encomiendo mi espíritu. Y habiendo dicho esto, expiró.',
+    },
+    description: 'Esta oración del salmista era la plegaria vespertina judía, rezada al acostarse como acto de confianza en Dios. Jesús la convirtió en sus palabras finales en la cruz, pero añadiendo "Padre" —un elemento nuevo— transformando la oración de confianza en una entrega filial plena. Lucas es el único evangelista que recoge estas palabras.',
+  },
+  {
+    id: 85,
+    title: 'Tome otro su oficio',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 109:8',
+      text: 'Sean pocos sus días; tome otro su oficio.',
+    },
+    newTestament: {
+      reference: 'Hechos 1:20',
+      text: 'Porque está escrito en el libro de los Salmos: Sea hecha desierta su habitación, y no haya quien more en ella; y: Tome otro su oficio.',
+    },
+    description: 'El Salmo 109, imprecatorio, incluye el deseo de que el traidor sea reemplazado. Pedro lo aplica a Judas tras la traición y el suicidio del apóstol, argumentando que las Escrituras mismas exigían que su lugar en el colegio apostólico fuera cubierto por otro. Este versículo motivó la elección de Matías como duodécimo apóstol.',
+  },
+  {
+    id: 86,
+    title: 'Como oveja fue llevado al degolladero',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 53:7-8',
+      text: 'Angustiado él, y afligido, no abrió su boca; como cordero fue llevado al matadero; y como oveja delante de sus trasquiladores, enmudeció, y no abrió su boca. Por cárcel y por juicio fue quitado; y su generación, ¿quién la contará?',
+    },
+    newTestament: {
+      reference: 'Hechos 8:32-35',
+      text: 'El pasaje de la Escritura que leía era este: Como oveja a la muerte fue llevado; y como cordero mudo delante del que lo trasquila, así no abrió su boca... Y Felipe, abriendo su boca, y comenzando desde esta Escritura, le anunció el evangelio de Jesús.',
+    },
+    description: 'El eunuco etíope iba leyendo Isaías 53 cuando Felipe se encontró con su carro. Este episodio de Hechos 8 es el primer ejemplo canónico de evangelización cristológica a partir del Siervo sufriente: Felipe lee el texto y anuncia a Jesús. Isaías 53:7-8 se convirtió en el punto de partida hermenéutico para entender la Pasión silenciosa de Cristo.',
+  },
+  {
+    id: 87,
+    title: 'El siervo será exaltado y ensalzado',
+    category: 'mesiánica',
+    theme: 'resurrección',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 52:13-15',
+      text: 'He aquí que mi siervo será prosperado, será engrandecido y exaltado, y será puesto muy en alto. Como se asombraron de ti muchos, de tal manera fue desfigurado de los hombres su parecer, y su hermosura más que la de los hijos de los hombres, así asombrará él a muchas naciones; los reyes cerrarán ante él la boca.',
+    },
+    newTestament: {
+      reference: 'Juan 12:32',
+      text: 'Y yo, si fuere levantado de la tierra, a todos atraeré a mí mismo.',
+    },
+    description: 'Isaías 52:13 abre el gran Cántico del Siervo con su paradoja central: el mismo que será desfigurado más allá de lo humano, será también exaltado más allá de toda nación y todo rey. Jesús en Juan 12 recoge este doble movimiento: "ser levantado" abraza a la vez la crucifixión y la glorificación. La cruz y la gloria son un único misterio.',
+  },
+
+  // ── MESIÁNICAS · ALIANZA (complemento) ───────────────────────────
+  {
+    id: 88,
+    title: 'He aquí vengo a hacer tu voluntad',
+    category: 'mesiánica',
+    theme: 'alianza',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 40:6-8',
+      text: 'Sacrificio y ofrenda no te agrada; has abierto mis oídos; holocausto y expiación no has demandado. Entonces dije: He aquí, vengo; en el rollo del libro está escrito de mí. El hacer tu voluntad, Dios mío, me ha agradado, y tu ley está en medio de mi corazón.',
+    },
+    newTestament: {
+      reference: 'Hebreos 10:5-7',
+      text: 'Por lo cual, entrando en el mundo dice: Sacrificio y ofrenda no quisiste; mas me preparaste cuerpo. Holocaustos y expiaciones por el pecado no te agradaron. Entonces dije: He aquí que vengo, oh Dios, para hacer tu voluntad, como en el rollo del libro está escrito de mí.',
+    },
+    description: 'El autor de Hebreos pone en boca de Cristo al entrar en el mundo estas palabras del Salmo 40. La clave teológica es radical: los sacrificios del AT no eran el centro de la voluntad de Dios; el Mesías viene a reemplazarlos con la ofrenda perfecta de sí mismo. El "rollo del libro" que habla de él es toda la Escritura que apunta a su misión.',
+  },
+
+  // ── APOCALÍPTICAS (complemento 2) ────────────────────────────────
+  {
+    id: 89,
+    title: 'Irán todas las naciones al monte del Señor',
+    category: 'apocalíptica',
+    theme: 'nueva creación',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 2:2-4',
+      text: 'Acontecerá en lo postrero de los tiempos, que será confirmado el monte de la casa del Señor como cabeza de los montes... y correrán a él todas las naciones. Y vendrán muchos pueblos, y dirán: Venid, y subamos al monte del Señor, a la casa del Dios de Jacob; y nos enseñará sus caminos, y caminaremos por sus sendas.',
+    },
+    newTestament: {
+      reference: 'Mateo 28:19',
+      text: 'Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Santo.',
+    },
+    description: 'Isaías anticipa la escatología universal: todas las naciones subirán al monte del Señor para aprender sus caminos. El mandato misionero de Jesús es el mecanismo histórico de ese cumplimiento: ya no son las naciones las que peregrinan espontáneamente, sino los discípulos enviados los que llevan la enseñanza del monte a todas las naciones.',
+  },
+  {
+    id: 90,
+    title: 'El lobo habitará con el cordero',
+    category: 'apocalíptica',
+    theme: 'nueva creación',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 11:6-9',
+      text: 'Morará el lobo con el cordero, y el leopardo con el cabrito se acostará; el becerro y el león y la bestia doméstica andarán juntos... No harán mal ni dañarán en todo mi santo monte; porque la tierra será llena del conocimiento del Señor, como las aguas cubren el mar.',
+    },
+    newTestament: {
+      reference: 'Romanos 8:21',
+      text: 'La creación misma también será libertada de la esclavitud de corrupción, a la libertad gloriosa de los hijos de Dios.',
+    },
+    description: 'La visión de Isaías describe la reconciliación cósmica de la nueva creación: la violencia entre los seres vivos desaparecerá porque la tierra estará llena del conocimiento de Dios. Pablo en Romanos 8 habla de la liberación de toda la creación, gemiendo como en dolores de parto hacia esa gloria. Ambos textos contemplan la renovación total del cosmos.',
+  },
+  {
+    id: 91,
+    title: 'Levántate, resplandece: la gloria del Señor ha nacido sobre ti',
+    category: 'apocalíptica',
+    theme: 'nueva creación',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 60:1-3',
+      text: 'Levántate, resplandece; porque ha venido tu luz, y la gloria del Señor ha nacido sobre ti. Porque he aquí que tinieblas cubrirán la tierra, y oscuridad las naciones; mas sobre ti amanecerá el Señor, y sobre ti será vista su gloria. Y andarán las naciones a tu luz, y los reyes al resplandor de tu nacimiento.',
+    },
+    newTestament: {
+      reference: 'Apocalipsis 21:23-24',
+      text: 'La ciudad no tiene necesidad de sol ni de luna que brillen en ella; porque la gloria de Dios la ilumina, y el Cordero es su lumbrera. Y las naciones que hubieren sido salvas andarán a la luz de ella; y los reyes de la tierra traerán su gloria y honor a ella.',
+    },
+    description: 'Isaías 60 es la profecía de la Sión restaurada que brilla con la gloria de Dios, atrayendo a naciones y reyes a su luz. El Apocalipsis cita este oráculo para describir la Jerusalén celeste, donde el Cordero reemplaza al sol y las naciones peregrinan a su luz. El cumplimiento escatológico supera la imagen: no hay templo ni astros, solo la presencia directa de Dios.',
+  },
+  {
+    id: 92,
+    title: 'El día del Señor llegará como ladrón en la noche',
+    category: 'apocalíptica',
+    theme: 'juicio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Sofonías 1:14-15',
+      text: 'Cercano está el gran día del Señor, cercano y muy presuroso; es amarga la voz del día del Señor; el valiente gritará allí amargamente. Día de ira aquel día, día de angustia y de aprieto, día de alboroto y de asolamiento, día de tiniebla y de oscuridad.',
+    },
+    newTestament: {
+      reference: '1 Tesalonicenses 5:2',
+      text: 'Porque vosotros sabéis perfectamente que el día del Señor vendrá así como ladrón en la noche.',
+    },
+    description: 'Sofonías describe el Día de Yahvé con el lenguaje más intenso del AT: ira, angustia, tiniebla. Pablo en 1 Tesalonicenses retoma la urgencia de esa venida con la imagen del ladrón nocturno. El Día del Señor del AT se transforma en la Parusía de Cristo, igualmente sorpresivo e irreversible.',
+  },
+
+  // ── APOCALÍPTICAS (complemento) ──────────────────────────────────
+  {
+    id: 76,
+    title: 'El culto universal de todas las naciones',
+    category: 'apocalíptica',
+    theme: 'nueva creación',
+    importance: 3,
+    oldTestament: {
+      reference: 'Zacarías 14:16',
+      text: 'Y todos los que sobrevivieren de las naciones que vinieron contra Jerusalén, subirán de año en año para adorar al Rey, al Señor de los ejércitos, y para celebrar la fiesta de los tabernáculos.',
+    },
+    newTestament: {
+      reference: 'Apocalipsis 15:4',
+      text: '¿Quién no te temerá, oh Señor, y glorificará tu nombre? Pues sólo tú eres santo; por lo cual todas las naciones vendrán y te adorarán, porque tus juicios se han manifestado.',
+    },
+    description: 'Zacarías concluye su libro con la visión escatológica de todas las naciones peregrinando a Jerusalén para adorar al Señor. El Apocalipsis retoma esta universalidad en el canto de los vencedores: todas las naciones adorarán a Dios. Lo que era peregrinación anual al templo terreno se convierte en liturgia eterna ante el trono del Cordero.',
+  },
 ];

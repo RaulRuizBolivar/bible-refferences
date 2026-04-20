@@ -1,0 +1,103 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.reference-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  border-top: 4px solid transparent;
+  border-radius: 8px !important;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px);
+  }
+
+  &.type-border-tipología           { border-top-color: #2e7d32; }
+  &.type-border-cita\ directa       { border-top-color: #0d47a1; }
+  &.type-border-paralelo\ temático  { border-top-color: #880e4f; }
+  &.type-border-alusión             { border-top-color: #e65100; }
+}
+
+.importance-stars {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 4px;
+
+  .star {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #d0d0d0;
+
+    &.filled { color: #f59e0b; }
+  }
+}
+
+.card-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  color: #263238;
+}
+
+mat-card-content.card-content {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.reference-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+
+  .ref-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #5c6bc0;
+
+    &.nt-icon { color: #2e7d32; }
+  }
+
+  .ref-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #546e7a;
+  }
+}
+
+.card-description {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #607d8b;
+}
+
+.type-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+
+  .chip-icon {
+    font-size: 13px !important;
+    width: 13px !important;
+    height: 13px !important;
+    margin-right: 2px;
+  }
+
+  &.type-tipología           { background: #e8f5e9 !important; color: #2e7d32 !important; }
+  &.type-cita\ directa       { background: #e3f2fd !important; color: #0d47a1 !important; }
+  &.type-paralelo\ temático  { background: #fce4ec !important; color: #880e4f !important; }
+  &.type-alusión             { background: #fff8e1 !important; color: #e65100 !important; }
+}
+
+.theme-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+  background: #f5f5f5 !important;
+  color: #78909c !important;
+}
