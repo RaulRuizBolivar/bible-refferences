@@ -1,0 +1,90 @@
+<mat-card class="app-card" [style.border-top-color]="borderColor">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ displayTitle }}</mat-card-title>
+    <div class="importance-stars" [title]="'Importancia: ' + entity.data.importance + '/5'">
+      @for (s of [1, 2, 3, 4, 5]; track s) {
+        <mat-icon class="star" [class.filled]="s <= entity.data.importance">star</mat-icon>
+      }
+    </div>
+    <mat-card-subtitle>
+      <mat-chip-set>
+        @switch (entity.kind) {
+          @case ('prophecy') {
+            <mat-chip [class]="'cat-chip cat-' + entity.data.category">
+              {{ entity.data.category }}
+            </mat-chip>
+            <mat-chip class="theme-chip">{{ entity.data.theme }}</mat-chip>
+          }
+          @case ('reference') {
+            <mat-chip [class]="'type-chip type-' + entity.data.type">
+              <mat-icon class="chip-icon">{{ referenceTypeIcon(entity.data.type) }}</mat-icon>
+              {{ entity.data.type }}
+            </mat-chip>
+            <mat-chip class="theme-chip">{{ entity.data.theme }}</mat-chip>
+          }
+          @case ('covenant') {
+            <mat-chip class="period-chip">{{ entity.data.period }}</mat-chip>
+            <mat-chip class="mediator-chip">{{ entity.data.mediator }}</mat-chip>
+          }
+        }
+      </mat-chip-set>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    @switch (entity.kind) {
+      @case ('prophecy') {
+        <div class="reference-row">
+          <mat-icon class="ref-icon">history_edu</mat-icon>
+          <span class="ref-text">{{ entity.data.oldTestament.reference }}</span>
+        </div>
+        @if (entity.data.newTestament) {
+          <div class="reference-row">
+            <mat-icon class="ref-icon">auto_stories</mat-icon>
+            <span class="ref-text">{{ entity.data.newTestament.reference }}</span>
+          </div>
+        } @else {
+          <div class="reference-row unfulfilled-row">
+            <mat-icon class="ref-icon">schedule</mat-icon>
+            <span class="ref-text">Sin cumplimiento en el NT</span>
+          </div>
+        }
+      }
+      @case ('reference') {
+        <div class="reference-row">
+          <mat-icon class="ref-icon">history_edu</mat-icon>
+          <span class="ref-text">{{ entity.data.verseB.reference }}</span>
+        </div>
+        <div class="reference-row">
+          <mat-icon class="ref-icon">auto_stories</mat-icon>
+          <span class="ref-text">{{ entity.data.verseA.reference }}</span>
+        </div>
+      }
+      @case ('covenant') {
+        <div class="reference-row">
+          <mat-icon class="ref-icon">history_edu</mat-icon>
+          <span class="ref-text">{{ entity.data.oldTestament.reference }}</span>
+        </div>
+        @if (entity.data.newTestament) {
+          <div class="reference-row">
+            <mat-icon class="ref-icon">auto_stories</mat-icon>
+            <span class="ref-text">{{ entity.data.newTestament.reference }}</span>
+          </div>
+        } @else {
+          <div class="reference-row unfulfilled-row">
+            <mat-icon class="ref-icon">schedule</mat-icon>
+            <span class="ref-text">Sin cumplimiento en el NT</span>
+          </div>
+        }
+      }
+    }
+    <p class="card-description">{{ description | slice: 0 : 160 }}…</p>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-button color="primary" (click)="abrirDetalles()">
+      <mat-icon>open_in_full</mat-icon>
+      Ver detalles
+    </button>
+  </mat-card-actions>
+</mat-card>

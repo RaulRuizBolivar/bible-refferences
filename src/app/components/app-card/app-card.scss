@@ -1,0 +1,123 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.app-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  border-top: 4px solid transparent;
+  border-radius: 8px !important;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.importance-stars {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 4px;
+
+  .star {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #d0d0d0;
+    &.filled { color: #f59e0b; }
+  }
+}
+
+.card-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  color: #263238;
+}
+
+mat-card-content.card-content {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.reference-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+
+  .ref-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #5c6bc0;
+  }
+
+  .ref-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #546e7a;
+  }
+}
+
+.unfulfilled-row {
+  .ref-icon, .ref-text {
+    color: #90a4ae;
+    font-style: italic;
+  }
+}
+
+.card-description {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #607d8b;
+}
+
+.cat-chip, .type-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+}
+
+.cat-chip {
+  &.cat-mesiánica    { background: #e8f5e9 !important; color: #2e7d32 !important; }
+  &.cat-apocalíptica { background: #fce4ec !important; color: #880e4f !important; }
+  &.cat-histórica    { background: #e3f2fd !important; color: #0d47a1 !important; }
+}
+
+.type-chip {
+  &.type-tipología         { background: #f3e8ff !important; color: #7c3aed !important; }
+  &.type-cita\ directa     { background: #fff3e0 !important; color: #e65100 !important; }
+  &.type-paralelo\ temático { background: #fce4ec !important; color: #c2185b !important; }
+  &.type-alusión           { background: #fffde7 !important; color: #f57f17 !important; }
+}
+
+.period-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+  background: #e8eaf6 !important;
+  color: #3949ab !important;
+}
+
+.mediator-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+  background: #f5f5f5 !important;
+  color: #78909c !important;
+}
+
+.theme-chip {
+  font-size: 0.75rem !important;
+  height: 22px !important;
+  background: #f5f5f5 !important;
+  color: #78909c !important;
+}
+
+.chip-icon {
+  font-size: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
