@@ -4,13 +4,26 @@
 </mat-toolbar>
 
 <nav class="app-nav">
-  <a mat-button routerLink="/" routerLinkActive="nav-active" [routerLinkActiveOptions]="{exact: true}">
+  <a
+    mat-button
+    routerLink="/"
+    routerLinkActive="nav-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
     <mat-icon>auto_awesome</mat-icon>
     Profecías
   </a>
   <a mat-button routerLink="/references" routerLinkActive="nav-active">
     <mat-icon>swap_horiz</mat-icon>
     Referencias cruzadas
+  </a>
+  <a mat-button routerLink="/covenants" routerLinkActive="nav-active">
+    <mat-icon>handshake</mat-icon>
+    Alianzas
+  </a>
+  <a mat-button routerLink="/network" routerLinkActive="nav-active">
+    <mat-icon>hub</mat-icon>
+    Personajes
   </a>
   <a mat-button routerLink="/charts" routerLinkActive="nav-active">
     <mat-icon>account_tree</mat-icon>
