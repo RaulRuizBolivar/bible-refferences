@@ -1436,6 +1436,250 @@ export const CROSS_REFERENCES: CrossReference[] = [
     description: 'El segundo Cántico del Siervo describe a alguien llamado por Dios desde el vientre materno para una misión a las naciones. Pablo describe su propia vocación al apostolado en términos casi idénticos, identificándose implícitamente con el Siervo. En Pablo se cumple el Siervo en su dimensión misionera: llevar la luz de Cristo a los gentiles.',
   },
 
+  // ── CITAS DIRECTAS (complemento 2) ───────────────────────────────
+  {
+    id: 90,
+    title: 'Nación santa, sacerdocio real: el nuevo pueblo de Dios',
+    type: 'cita directa',
+    theme: 'eclesiología',
+    importance: 5,
+    verseA: {
+      reference: '1 Pedro 2:9',
+      text: 'Mas vosotros sois linaje escogido, real sacerdocio, nación santa, pueblo adquirido por Dios, para que anunciéis las virtudes de aquel que os llamó de las tinieblas a su luz admirable.',
+    },
+    verseB: {
+      reference: 'Éxodo 19:6',
+      text: 'Y vosotros me seréis un reino de sacerdotes, y gente santa. Estas son las palabras que dirás a los hijos de Israel.',
+    },
+    description: 'En el Sinaí Dios definió la identidad de Israel con tres títulos: reino de sacerdotes, nación santa, pueblo elegido. Pedro aplica los tres exactamente a las comunidades cristanas. La Iglesia no reemplaza a Israel sino que es su realización plena: todos los bautizados comparten el sacerdocio real que el AT prometía al conjunto del pueblo de Dios.',
+  },
+  {
+    id: 91,
+    title: '¿Quién conoció la mente del Señor? Insondabilidad divina',
+    type: 'cita directa',
+    theme: 'teología',
+    importance: 3,
+    verseA: {
+      reference: 'Romanos 11:34',
+      text: 'Porque ¿quién conoció la mente del Señor? ¿O quién fue su consejero?',
+    },
+    verseB: {
+      reference: 'Isaías 40:13',
+      text: '¿Quién enseñó al Espíritu del Señor, o le aconsejó enseñándole? ¿A quién pidió consejo para ser avisado? ¿Quién le enseñó el camino del juicio, o le enseñó ciencia, o le mostró la senda de la prudencia?',
+    },
+    description: 'Isaías 40, el gran capítulo de consolación, afirma la absoluta incomprensibilidad de los designios divinos. Pablo lo cita al final de su argumento sobre la elección de Israel y la misión a los gentiles (Rm 9-11): la providencia de Dios que rechaza por un tiempo a Israel para salvar a los gentiles y luego salvar a todo Israel supera cualquier razonamiento humano.',
+  },
+  {
+    id: 92,
+    title: 'Las misericordias fieles prometidas a David',
+    type: 'cita directa',
+    theme: 'alianza',
+    importance: 3,
+    verseA: {
+      reference: 'Hechos 13:34',
+      text: 'Y en cuanto a que le levantó de los muertos para nunca más volver a corrupción, lo dijo así: Os daré las misericordias fieles de David.',
+    },
+    verseB: {
+      reference: 'Isaías 55:3',
+      text: 'Inclinad vuestro oído, y venid a mí; oíd, y vivirá vuestra alma; y haré con vosotros pacto eterno, las misericordias fieles a David.',
+    },
+    description: 'Isaías 55 ofrece a todos la alianza que Dios había sellado con David, abriéndola a cualquiera que tenga sed y quiera escuchar. Pablo en Antioquía de Pisidia interpreta que la Resurrección de Jesús es el cumplimiento definitivo de esas "misericordias fieles": Dios cumplió con la casa de David en Cristo lo que prometió, y ahora lo ofrece a todos.',
+  },
+  {
+    id: 93,
+    title: 'Regocíjate, estéril: la Iglesia, madre de muchos más hijos',
+    type: 'cita directa',
+    theme: 'eclesiología',
+    importance: 3,
+    verseA: {
+      reference: 'Gálatas 4:27',
+      text: 'Porque está escrito: Regocíjate, oh estéril, tú que no das a luz; prorrumpe en júbilo y clama, tú que no tienes dolores de parto; porque más son los hijos de la desolada, que de la que tiene marido.',
+    },
+    verseB: {
+      reference: 'Isaías 54:1',
+      text: 'Regocíjate, oh estéril, la que no daba a luz; levanta canción y da voces de júbilo, la que nunca estuvo de parto; porque más son los hijos de la desamparada que los de la casada, ha dicho el Señor.',
+    },
+    description: 'Isaías 54 habla de la Sión restaurada que tras el exilio tendrá más hijos que antes. Pablo aplica la alegoría a las dos alianzas: Agar (Sinaí/esclava) representa la Torah que engendra esclavos; Sara (promesa/libre) representa la alianza de fe que engendra hijos libres. La Iglesia, aparentemente menor que la sinagoga, tiene más hijos entre los gentiles.',
+  },
+  {
+    id: 94,
+    title: 'Por tu causa somos muertos todo el día',
+    type: 'cita directa',
+    theme: 'martirio y persecución',
+    importance: 3,
+    verseA: {
+      reference: 'Romanos 8:36',
+      text: 'Como está escrito: Por causa de ti somos muertos todo el tiempo; somos contados como ovejas de matadero.',
+    },
+    verseB: {
+      reference: 'Salmo 44:22',
+      text: 'Antes, por causa de ti nos matan cada día; somos contados como ovejas para el matadero.',
+    },
+    description: 'El Salmo 44 es lamento de Israel que sufre a pesar de su fidelidad. Pablo lo cita en el himno de la victoria cristiana (Rm 8:31-39) para mostrar que la persecución y la muerte no separan del amor de Cristo, sino que son el terreno mismo en que ese amor triunfa. El martirio de los justos del AT prefigura el martirio cristiano, pero ahora en ninguna de estas cosas somos vencidos.',
+  },
+  {
+    id: 95,
+    title: '¿No está escrito que sois dioses?',
+    type: 'cita directa',
+    theme: 'cristología',
+    importance: 4,
+    verseA: {
+      reference: 'Juan 10:34-36',
+      text: 'Jesús les respondió: ¿No está escrito en vuestra ley: Yo dije, dioses sois? Si llamó dioses a aquellos a quienes vino la palabra de Dios (y la Escritura no puede ser quebrantada), ¿al que el Padre santificó y envió al mundo, vosotros decís: Blasfemas, porque dije: Hijo de Dios soy?',
+    },
+    verseB: {
+      reference: 'Salmo 82:6',
+      text: 'Yo dije: Vosotros sois dioses, y todos vosotros hijos del Altísimo.',
+    },
+    description: 'Jesús usa el Salmo 82 para responder a la acusación de blasfemia: si la Escritura llama "dioses" a los jueces de Israel —simples hombres a quienes llegó la palabra de Dios—, con cuánta más razón puede llamarse Hijo de Dios aquel a quien el Padre santificó y envió. El argumento es a fortiori: la dignidad del Mesías supera la de cualquier representante humano de Dios.',
+  },
+  {
+    id: 96,
+    title: 'En ti serán benditas todas las naciones',
+    type: 'cita directa',
+    theme: 'misión a los gentiles',
+    importance: 4,
+    verseA: {
+      reference: 'Gálatas 3:8',
+      text: 'Y la Escritura, previendo que Dios había de justificar por la fe a los gentiles, dio de antemano la buena nueva a Abraham, diciendo: En ti serán benditas todas las naciones.',
+    },
+    verseB: {
+      reference: 'Génesis 12:3',
+      text: 'Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti todas las familias de la tierra.',
+    },
+    description: 'Pablo descubre en Génesis 12:3 nada menos que la primera predicación del Evangelio: Dios anunció "de antemano la buena nueva" a Abraham al prometer la bendición universal. El argumento es radical: la justificación por la fe a los gentiles no es una innovación cristiana, sino la realización de lo que Dios había prometido al patriarca 2000 años antes de Cristo.',
+  },
+
+  // ── PARALELOS TEMÁTICOS (complemento 2) ──────────────────────────
+  {
+    id: 97,
+    title: 'La Sabiduría invita al banquete y la Eucaristía',
+    type: 'paralelo temático',
+    theme: 'eucaristía',
+    importance: 4,
+    verseA: {
+      reference: 'Juan 6:53-55',
+      text: 'Jesús les dijo: De cierto, de cierto os digo: Si no coméis la carne del Hijo del Hombre, y bebéis su sangre, no tenéis vida en vosotros. El que come mi carne y bebe mi sangre, tiene vida eterna; y yo le resucitaré en el día postrero. Porque mi carne es verdadera comida, y mi sangre es verdadera bebida.',
+    },
+    verseB: {
+      reference: 'Proverbios 9:1-5',
+      text: 'La sabiduría edificó su casa, labró sus siete columnas. Mató sus victimas, mezcló su vino, y puso su mesa. Envió sus criadas; sobre lo más alto de la ciudad clamó... Venid, comed mi pan, y bebed el vino que yo he mezclado.',
+    },
+    description: 'La Sabiduría personificada de Proverbios 9 edifica una casa de siete columnas y prepara un banquete al que invita a todos. Jesús en Juan 6 se presenta como la Sabiduría encarnada que ofrece su propia carne y sangre como verdadero alimento. La Eucaristía es el banquete de la Sabiduría hecho carne: ya no pan y vino simbólicos, sino el Cuerpo y la Sangre de Cristo.',
+  },
+  {
+    id: 98,
+    title: 'Sea la luz: creación y nueva creación en Cristo',
+    type: 'paralelo temático',
+    theme: 'creación y redención',
+    importance: 4,
+    verseA: {
+      reference: '2 Corintios 4:6',
+      text: 'Porque Dios, que mandó que de las tinieblas resplandeciese la luz, es el que resplandeció en nuestros corazones, para iluminación del conocimiento de la gloria de Dios en la faz de Jesucristo.',
+    },
+    verseB: {
+      reference: 'Génesis 1:3',
+      text: 'Y dijo Dios: Sea la luz; y fue la luz.',
+    },
+    description: 'Pablo traza el paralelismo entre los dos actos creativos de Dios: la orden "sea la luz" del primer día y la irrupción de la gloria de Cristo en el corazón del creyente. La nueva creación comienza de la misma manera que la primera: con la palabra luminosa de Dios. El conocimiento de Cristo es el "primer día" de la nueva humanidad.',
+  },
+  {
+    id: 99,
+    title: 'La sangre de Abel y la sangre de Cristo',
+    type: 'paralelo temático',
+    theme: 'mediación y sacrificio',
+    importance: 4,
+    verseA: {
+      reference: 'Hebreos 12:24',
+      text: 'A Jesús el Mediador del nuevo pacto, y a la sangre rociada que habla mejor que la de Abel.',
+    },
+    verseB: {
+      reference: 'Génesis 4:8-10',
+      text: 'Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató. Y el Señor dijo a Caín: ¿Dónde está Abel tu hermano? Y él respondió: No sé. ¿Soy yo acaso guarda de mi hermano? Y él le dijo: ¿Qué has hecho? La voz de la sangre de tu hermano clama a mí desde la tierra.',
+    },
+    description: 'La sangre de Abel "clama" a Dios desde la tierra pidiendo justicia contra el asesino. Hebreos presenta la sangre de Cristo como la que "habla mejor": no pide venganza sino misericordia. El primer fratricidio de la historia prefigura la muerte del inocente por excelencia; pero donde Abel solo podía gemir, Cristo intercede. La historia de Caín y Abel es el marco tipológico de la Pasión.',
+  },
+  {
+    id: 100,
+    title: 'La abominación desoladora: profecía e historia',
+    type: 'paralelo temático',
+    theme: 'juicio e historia',
+    importance: 4,
+    verseA: {
+      reference: 'Mateo 24:15',
+      text: 'Por tanto, cuando veáis en el lugar santo la abominación desoladora de que habló el profeta Daniel (el que lee, entienda).',
+    },
+    verseB: {
+      reference: 'Daniel 9:27',
+      text: 'Y por otra semana confirmará el pacto con muchos; a la mitad de la semana hará cesar el sacrificio y la ofrenda. Después con la muchedumbre de las abominaciones vendrá el desolador, hasta que venga la consumación, y lo que está determinado se derrame sobre el desolador.',
+    },
+    description: 'Daniel profetizó la "abominación desoladora" que se cumpliría primero con la profanación del templo por Antíoco IV Epífanes (167 a.C.). Jesús relanza la profecía dándole una segunda aplicación: la destrucción del templo en el año 70 d.C. y, más allá, los signos del fin de los tiempos. Daniel es el prototipo de la profecía de múltiple cumplimiento.',
+  },
+  {
+    id: 101,
+    title: 'Las naciones conjuradas contra el Ungido',
+    type: 'cita directa',
+    theme: 'pasión y providencia',
+    importance: 4,
+    verseA: {
+      reference: 'Hechos 4:25-26',
+      text: 'Que por boca de David tu siervo dijiste: ¿Por qué se amotinan las gentes, y los pueblos piensan cosas vanas? Se reunieron los reyes de la tierra, y los príncipes se juntaron en uno contra el Señor, y contra su Cristo.',
+    },
+    verseB: {
+      reference: 'Salmo 2:1-2',
+      text: '¿Por qué se amotinan las gentes, y los pueblos piensan cosas vanas? Se levantarán los reyes de la tierra, y príncipes consultarán unidos contra el Señor y contra su ungido.',
+    },
+    description: 'La comunidad primitiva, tras la liberación de Pedro y Juan, ora utilizando el Salmo 2 para interpretar la Pasión: Herodes, Pilato, los gentiles y el pueblo de Israel se "reunieron" contra Jesús —el Ungido— cumpliendo exactamente lo que el Salmo describía. La persecución no es un fracaso providencial sino su realización: "tu mano y tu consejo predestinaron que sucediese".',
+  },
+  {
+    id: 102,
+    title: 'La visión del trono: de Ezequiel al Apocalipsis',
+    type: 'paralelo temático',
+    theme: 'liturgia celestial',
+    importance: 5,
+    verseA: {
+      reference: 'Apocalipsis 4:2-8',
+      text: 'Y he aquí, un trono estaba puesto en el cielo, y en el trono, uno sentado. Y el aspecto del que estaba sentado era semejante a piedra de jaspe y de cornalina... En derredor del trono había cuatro seres vivientes llenos de ojos delante y detrás. El primero era semejante a un león; el segundo era semejante a un becerro; el tercero tenía rostro como de hombre; el cuarto era semejante a un águila volando.',
+    },
+    verseB: {
+      reference: 'Ezequiel 1:5-10',
+      text: 'Y en medio de ella la figura de cuatro seres vivientes... cada uno tenía cuatro caras y cuatro alas... En cuanto a la semejanza de sus rostros, tenían rostro de hombre, y rostro de león al lado derecho de los cuatro, y rostro de buey a su lado izquierdo; también había en los cuatro rostro de águila.',
+    },
+    description: 'Juan en el Apocalipsis retoma con deliberada fidelidad la visión del trono de Ezequiel: los cuatro vivientes con sus cuatro rostros (hombre, toro, león, águila), el mar de cristal, el trono luminoso. Pero hay una diferencia crucial: en el centro del trono de Ezequiel está la gloria del Señor; en el Apocalipsis está también el Cordero. La liturgia celestial revela que Cristo comparte el trono de Dios.',
+  },
+  {
+    id: 103,
+    title: 'Isaías vio la gloria de Cristo',
+    type: 'alusión',
+    theme: 'cristología',
+    importance: 4,
+    verseA: {
+      reference: 'Juan 12:41',
+      text: 'Isaías dijo esto cuando vio su gloria, y habló acerca de él.',
+    },
+    verseB: {
+      reference: 'Isaías 6:1-3',
+      text: 'En el año que murió el rey Uzías vi yo al Señor sentado sobre un trono alto y sublime, y sus faldas llenaban el templo. Por encima de él había serafines... Y el uno al otro daba voces, diciendo: Santo, santo, santo, el Señor de los ejércitos; toda la tierra está llena de su gloria.',
+    },
+    description: 'Juan cita dos pasajes de Isaías (53 y 6) para explicar la incredulidad de los judíos ante Jesús, y luego hace una afirmación sorprendente: cuando Isaías vio la gloria de Yahvé en el templo (Is 6), lo que vio fue "su gloria" —la gloria de Cristo—. Juan identifica la gloria de Yahvé en el AT con la gloria del Hijo encarnado: la cristología joanica no nace en Belén sino en la eternidad.',
+  },
+  {
+    id: 104,
+    title: 'El misterio grande: Cristo y la Iglesia en el matrimonio',
+    type: 'tipología',
+    theme: 'eclesiología y matrimonio',
+    importance: 5,
+    verseA: {
+      reference: 'Efesios 5:31-32',
+      text: 'Por esto dejará el hombre a su padre y a su madre, y se unirá a su mujer, y los dos serán una sola carne. Grande es este misterio; mas yo digo esto respecto de Cristo y de la iglesia.',
+    },
+    verseB: {
+      reference: 'Génesis 2:24',
+      text: 'Por tanto, dejará el hombre a su padre y a su madre, y se unirá a su mujer, y serán una sola carne.',
+    },
+    description: 'Pablo cita Génesis 2:24 —la institución del matrimonio— y revela que ese texto tenía desde el principio un significado más profundo: prefiguraba la unión de Cristo con la Iglesia. El matrimonio humano no es solo institución natural sino sacramento: signo visible de la alianza invisible entre Cristo y su Iglesia. Esta lectura es la base de la teología sacramental católica del matrimonio.',
+  },
+
   {
     id: 75,
     title: 'El incienso y la oración de los santos',

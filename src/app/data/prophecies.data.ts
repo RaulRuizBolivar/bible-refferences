@@ -1481,6 +1481,306 @@ export const PROPHECIES: Prophecy[] = [
     description: 'Sofonías describe el Día de Yahvé con el lenguaje más intenso del AT: ira, angustia, tiniebla. Pablo en 1 Tesalonicenses retoma la urgencia de esa venida con la imagen del ladrón nocturno. El Día del Señor del AT se transforma en la Parusía de Cristo, igualmente sorpresivo e irreversible.',
   },
 
+  // ── MESIÁNICAS · NACIMIENTO (complemento 3) ──────────────────────
+  {
+    id: 93,
+    title: 'El vástago justo: el Señor justicia nuestra',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 4,
+    oldTestament: {
+      reference: 'Jeremías 23:5-6',
+      text: 'He aquí que vienen días, dice el Señor, en que levantaré a David renuevo justo, y reinará como rey, el cual será dichoso, y hará juicio y justicia en la tierra. En sus días será salvo Judá, e Israel habitará confiado; y este será su nombre con el cual le llamarán: El Señor, justicia nuestra.',
+    },
+    newTestament: {
+      reference: '1 Corintios 1:30',
+      text: 'Mas por él estáis vosotros en Cristo Jesús, el cual nos ha sido hecho por Dios sabiduría, justificación, santificación y redención.',
+    },
+    description: 'Jeremías profetiza un vástago davídico cuyo nombre propio será "El Señor justicia nuestra" —atributo inequívocamente divino—. Pablo declara que Cristo ha sido hecho para nosotros justificación. El nombre profético se convierte en la entraña de la soteriología paulina: la justicia que el Mesías aporta no es propia del hombre sino que viene de Dios mismo.',
+  },
+  {
+    id: 94,
+    title: 'El sol de justicia nacerá con sanidad en sus alas',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 3,
+    oldTestament: {
+      reference: 'Malaquías 4:2',
+      text: 'Mas a vosotros los que teméis mi nombre, nacerá el Sol de justicia, y en sus alas traerá salvación; y saldréis, y saltaréis como becerros de la manada.',
+    },
+    newTestament: {
+      reference: 'Lucas 1:78-79',
+      text: 'Por la entrañable misericordia de nuestro Dios, con que nos visitó desde lo alto la aurora, para dar luz a los que habitan en tinieblas y en sombra de muerte; para encaminar nuestros pies por camino de paz.',
+    },
+    description: 'El último libro del canon hebreo cierra con la imagen del "Sol de justicia" que trae sanidad. El cántico de Zacarías (Benedictus) recoge ese lenguaje solar para anunciar la llegada de Cristo: la aurora desde lo alto que ilumina a los que viven en sombra de muerte. La última profecía del AT y el primer himno del NT comparten la misma metáfora luminosa.',
+  },
+  {
+    id: 95,
+    title: 'Del fruto de tus lomos pondré sobre tu trono',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 132:11',
+      text: 'En verdad juró el Señor a David, y no se retractará de ello: De el fruto de tu vientre pondré sobre tu trono.',
+    },
+    newTestament: {
+      reference: 'Hechos 2:30',
+      text: 'Pero siendo profeta, y sabiendo que con juramento Dios le había jurado que de el fruto de sus lomos, en cuanto a la carne, levantaría al Cristo para que se sentase en su trono.',
+    },
+    description: 'El Salmo 132 recuerda el juramento de Dios a David sobre un sucesor eterno. Pedro en Pentecostés cita exactamente este pasaje para argumentar que David, siendo profeta, habló de la Resurrección de Cristo: sabía que Dios cumpliría ese juramento en un descendiente cuyo trono no tendría fin.',
+  },
+
+  // ── MESIÁNICAS · MINISTERIO (complemento 3) ──────────────────────
+  {
+    id: 96,
+    title: 'El Renuevo: sacerdote y rey sobre su trono',
+    category: 'mesiánica',
+    theme: 'sacerdocio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Zacarías 6:12-13',
+      text: 'Y le hablarás, diciendo: Así habla el Señor de los ejércitos, diciendo: He aquí el varón cuyo nombre es el Renuevo, el cual brotará de sus raíces, y edificará el templo del Señor. Él edificará el templo del Señor, y él llevará gloria, y se sentará y dominará en su trono, y habrá sacerdote a su lado; y consejo de paz habrá entre ambos.',
+    },
+    newTestament: {
+      reference: 'Hebreos 7:1-3',
+      text: 'Porque este Melquisedec... sin padre, sin madre, sin genealogía; que ni tiene principio de días, ni fin de vida, sino hecho semejante al Hijo de Dios, permanece sacerdote para siempre.',
+    },
+    description: 'Zacarías nombra al Mesías con el título "Renuevo" y lo presenta como figura única que reunirá en una sola persona el trono real y el sacerdocio: "consejo de paz habrá entre ambos". La Carta a los Hebreos desarrolla este misterio: Cristo es rey según David y sacerdote según Melquisedec, uniendo los dos oficios que en Israel estaban separados por ley.',
+  },
+  {
+    id: 97,
+    title: 'Un solo pastor para todas las ovejas',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Ezequiel 34:23-24',
+      text: 'Y levantaré sobre ellas a un pastor, y él las apacentará; a mi siervo David, él las apacentará, y él les será por pastor. Yo el Señor les seré por Dios, y mi siervo David príncipe en medio de ellas.',
+    },
+    newTestament: {
+      reference: 'Juan 10:16',
+      text: 'También tengo otras ovejas que no son de este redil; aquéllas también debo traer, y oirán mi voz; y habrá un rebaño, y un pastor.',
+    },
+    description: 'Ezequiel profetiza que Dios nombrará a un nuevo David como único pastor de Israel. Jesús en el discurso del Buen Pastor lo cumple en dos dimensiones: primero, él mismo es ese único pastor davídico; segundo, amplía el rebaño más allá de Israel —"otras ovejas que no son de este redil"— para incluir a los gentiles en un solo rebaño universal.',
+  },
+  {
+    id: 98,
+    title: 'La lengua del enseñado: la enseñanza con autoridad',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 50:4-5',
+      text: 'El Señor Dios me dio lengua de sabios, para saber hablar palabras al cansado; despertará mañana tras mañana, despertará mi oído para que oiga como los sabios. El Señor Dios me abrió el oído, y yo no fui rebelde, ni me volví atrás.',
+    },
+    newTestament: {
+      reference: 'Marcos 1:22',
+      text: 'Y se admiraban de su doctrina; porque les enseñaba como quien tiene autoridad, y no como los escribas.',
+    },
+    description: 'El tercer Cántico del Siervo describe a alguien que recibe del Señor una lengua y un oído de discípulo, capacitado para nutrir al cansado con la palabra recibida de Dios. La multitud reconoció en la enseñanza de Jesús una autoridad que venía directamente de Dios, a diferencia de los escribas que citaban tradiciones humanas.',
+  },
+  {
+    id: 99,
+    title: 'Sus ángeles te guardarán en todos tus caminos',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 91:11-12',
+      text: 'Pues a sus ángeles mandará acerca de ti, que te guarden en todos tus caminos. En las manos te llevarán, para que tu pie no tropiece en piedra.',
+    },
+    newTestament: {
+      reference: 'Mateo 4:6',
+      text: 'Y le dijo: Si eres Hijo de Dios, échate abajo; porque escrito está: A sus ángeles mandará acerca de ti, y en sus manos te sostendrán, para que no tropieces con tu pie en piedra.',
+    },
+    description: 'El Salmo 91, canto de confianza en la protección divina, es el pasaje que el diablo cita en el segundo relato de la tentación de Jesús. La ironía es triple: el tentador usa la Escritura para tentar al propio Hijo de Dios; Jesús rechaza la tentación precisamente por no querer poner a prueba a su Padre; y los ángeles sí vendrán a servirle, pero al final de las tentaciones.',
+  },
+  {
+    id: 100,
+    title: 'El hijo enemistado con el padre',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Miqueas 7:6',
+      text: 'Porque el hijo deshonra al padre, la hija se levanta contra su madre, la nuera contra su suegra; y los enemigos del hombre son los de su casa.',
+    },
+    newTestament: {
+      reference: 'Mateo 10:35-36',
+      text: 'Porque he venido para poner en disensión al hombre contra su padre, a la hija contra su madre, y a la nuera contra su suegra; y los enemigos del hombre serán los de su casa.',
+    },
+    description: 'Miqueas describe el colapso moral de su época: la falta de fidelidad llega hasta el núcleo de la familia. Jesús cita este pasaje casi literalmente para advertir que su venida no traerá paz a toda costa: allí donde la fidelidad al evangelio divida una familia, esa división es preferible a la paz falsa. La espada del discernimiento cumple la palabra profética.',
+  },
+  {
+    id: 101,
+    title: 'Piedra de tropiezo y roca de escándalo',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 8:14',
+      text: 'Entonces él será por santuario; pero a las dos casas de Israel, por piedra para tropezar, y por tropezadero para caer, y por lazo y por red al morador de Jerusalén.',
+    },
+    newTestament: {
+      reference: '1 Pedro 2:8',
+      text: 'Y: Piedra de tropiezo, y roca que hace caer; porque tropiezan en la palabra, siendo desobedientes; a lo cual fueron también destinados.',
+    },
+    description: 'Isaías en su visión del "Señor como santuario" profetiza que esa misma presencia salvadora será piedra de tropiezo para quien la rechace. Pedro combina Isaías 8:14 con Isaías 28:16 y el Salmo 118:22 para construir una cristología de la piedra: Cristo es a la vez cimiento elegido para los creyentes y roca de escándalo para los desobedientes.',
+  },
+  {
+    id: 102,
+    title: 'Me honran con los labios pero su corazón está lejos',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 29:13',
+      text: 'Dice pues el Señor: Porque este pueblo se acerca a mí con su boca, y con sus labios me honra, pero su corazón está lejos de mí, y su temor de mí no es más que un mandamiento de hombres que les ha sido enseñado.',
+    },
+    newTestament: {
+      reference: 'Mateo 15:8-9',
+      text: 'Este pueblo de labios me honra; mas su corazón está lejos de mí. Pues en vano me honran, enseñando como doctrinas mandamientos de hombres.',
+    },
+    description: 'Isaías denuncia la religiosidad externa desconectada del corazón. Jesús lo cita directamente en su enfrentamiento con los fariseos sobre las tradiciones de purificación: la distinción entre lo puro e impuro que ellos aplican externamente no llega al corazón. El profeta había diagnosticado siglos antes la misma enfermedad que Jesús trataba de curar.',
+  },
+
+  // ── MESIÁNICAS · PASIÓN (complemento 3) ──────────────────────────
+  {
+    id: 103,
+    title: 'Mis huesos se dislocan: agonía en la pasión',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 4,
+    oldTestament: {
+      reference: 'Salmo 22:14-15',
+      text: 'Me he derramado como aguas, y todos mis huesos se descoyuntaron; mi corazón fue como cera, derritiéndose en medio de mis entrañas. Como un tiesto se secó mi vigor, y mi lengua se pegó a mi paladar, y me has puesto en el polvo de la muerte.',
+    },
+    newTestament: {
+      reference: 'Lucas 22:44',
+      text: 'Y estando en agonía, oraba más intensamente; y era su sudor como grandes gotas de sangre que caían hasta la tierra.',
+    },
+    description: 'Los versículos centrales del Salmo 22 describen con detalle fisiológico el sufrimiento extremo: deshidratación, tensión muscular total, corazón como cera. Lucas en Getsemaní describe el sudor de sangre (hematidrosis), signo del mismo agotamiento extremo. El cuerpo de Jesús en agonía cumple en carne propia los síntomas que el salmista había descrito proféticamente.',
+  },
+  {
+    id: 104,
+    title: 'Si pusiere su vida en expiación por el pecado',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 5,
+    oldTestament: {
+      reference: 'Isaías 53:10-11',
+      text: 'Con todo eso, el Señor quiso quebrantarlo, sujetándole a padecimiento. Cuando haya puesto su vida en expiación por el pecado, verá linaje, vivirá por largos días, y la voluntad del Señor será en su mano prosperada. Verá el fruto de la aflicción de su alma, y quedará satisfecho.',
+    },
+    newTestament: {
+      reference: 'Hebreos 9:14',
+      text: 'Cuánto más la sangre de Cristo, el cual mediante el Espíritu eterno se ofreció a sí mismo sin mancha a Dios, limpiará vuestras conciencias de obras muertas para que sirváis al Dios vivo.',
+    },
+    description: 'Isaías 53:10 es uno de los versículos más densos de toda la Escritura: el siervo pone su vida como ofrenda por el pecado (āšām, sacrificio expiatorio) y, paradójicamente, "verá linaje" tras la muerte. Hebreos desarrolla que esta ofrenda fue única y perfecta: la sangre del Mesías, ofrecida mediante el Espíritu eterno, consuma lo que todas las expiaciones levíticas solo prefiguraban.',
+  },
+  {
+    id: 105,
+    title: 'El campo del alfarero comprado con el precio de sangre',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Jeremías 32:6-9',
+      text: 'Dijo Jeremías: Vino a mí la palabra del Señor, diciendo: He aquí que Hanameel hijo de Salum tu tío viene a ti, diciendo: Cómprate mi heredad que está en Anatot, porque tú tienes derecho de rescatar para comprarla. Y vino a mí, conforme a la palabra del Señor, Hanameel hijo de mi tío a la cámara de la guardia, y me dijo: Compra ahora mi heredad que está en Anatot.',
+    },
+    newTestament: {
+      reference: 'Mateo 27:9-10',
+      text: 'Entonces se cumplió lo dicho por el profeta Jeremías, cuando dijo: Y tomaron las treinta piezas de plata, precio del apreciado, según precio puesto por los hijos de Israel; y las dieron para el campo del alfarero, como me ordenó el Señor.',
+    },
+    description: 'Mateo atribuye a Jeremías la compra del campo del alfarero con las treinta monedas, fusionando la acción simbólica de Jeremías comprando tierras en el momento de la destrucción (señal de futura restauración) con la imagery de Zacarías 11. La compra de la tierra en el momento de la Pasión reproduce el gesto profético: donde hay muerte se planta la semilla de la restauración.',
+  },
+
+  // ── MESIÁNICAS · RESURRECCIÓN (complemento 2) ────────────────────
+  {
+    id: 106,
+    title: 'Al tercer día nos resucitará',
+    category: 'mesiánica',
+    theme: 'resurrección',
+    importance: 5,
+    oldTestament: {
+      reference: 'Oseas 6:2',
+      text: 'Nos dará vida después de dos días; en el tercer día nos resucitará, y viviremos delante de él.',
+    },
+    newTestament: {
+      reference: '1 Corintios 15:4',
+      text: 'Y que fue sepultado, y que resucitó al tercer día, conforme a las Escrituras.',
+    },
+    description: 'Pablo en el que es considerado el credo más antiguo del NT (1Cor 15:3-5) afirma que la Resurrección "al tercer día" ocurrió "conforme a las Escrituras". Oseas 6:2 es el pasaje veterotestamentario que apunta con más claridad a ese "tercer día" como momento de la acción resucitadora de Dios. Israel que se "levantará al tercer día" anticipa al Mesías que resucita en ese mismo plazo.',
+  },
+
+  // ── APOCALÍPTICAS (complemento 3) ────────────────────────────────
+  {
+    id: 107,
+    title: 'Tus muertos vivirán: resurrección de la carne',
+    category: 'apocalíptica',
+    theme: 'escatología',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 26:19',
+      text: 'Tus muertos vivirán; sus cadáveres resucitarán. ¡Despertad y cantad, moradores del polvo! porque tu rocío es cual rocío de la aurora, y la tierra dará sus muertos.',
+    },
+    newTestament: {
+      reference: 'Juan 11:43-44',
+      text: 'Y habiendo dicho esto, clamó a gran voz: ¡Lázaro, ven fuera! Y el que había muerto salió, atadas las manos y los pies con vendas, y el rostro envuelto en un sudario.',
+    },
+    description: 'El "pequeño apocalipsis" de Isaías anuncia que los muertos vivirán y que el rocío de Dios hará germinar la tierra de sus difuntos. La resurrección de Lázaro es el signo más directo de Jesús antes de su Pasión: anticipa y garantiza la resurrección universal. Jesús actúa sobre Lázaro como Dios actúa sobre sus muertos en Isaías: con una voz poderosa que ordena la vida.',
+  },
+  {
+    id: 108,
+    title: 'El Anciano de Días y el Cristo glorioso',
+    category: 'apocalíptica',
+    theme: 'parusía',
+    importance: 4,
+    oldTestament: {
+      reference: 'Daniel 7:9-10',
+      text: 'Estuve mirando hasta que fueron puestos tronos, y se sentó un Anciano de días, cuyo vestido era blanco como la nieve, y el pelo de su cabeza como lana limpia... millares de millares le servían, y millones de millones asistían delante de él.',
+    },
+    newTestament: {
+      reference: 'Apocalipsis 1:13-15',
+      text: 'Y en medio de los siete candeleros, a uno semejante al Hijo del Hombre, vestido de una ropa que llegaba hasta los pies... Su cabeza y sus cabellos eran blancos como blanca lana, como nieve; sus ojos como llama de fuego; y sus pies semejantes al bronce bruñido.',
+    },
+    description: 'La descripción del Cristo glorioso en Apocalipsis 1 está construida con las imágenes del Anciano de Días de Daniel: cabello blanco, resplandor celestial, multitudes ante el trono. Juan aplica al Hijo del Hombre los atributos del Anciano de Días, una forma audaz de expresar la divinidad de Cristo: el Resucitado comparte la gloria del Padre mismo.',
+  },
+
+  // ── HISTÓRICAS (complemento 2) ───────────────────────────────────
+  {
+    id: 109,
+    title: 'Llenaré de gloria esta casa: el segundo templo',
+    category: 'histórica',
+    theme: 'restauración',
+    importance: 3,
+    oldTestament: {
+      reference: 'Ageo 2:7-9',
+      text: 'Y haré temblar a todas las naciones, y vendrá el Deseado de todas las naciones; y llenaré de gloria esta casa, ha dicho el Señor de los ejércitos. Mía es la plata, y mío el oro, dice el Señor de los ejércitos. La gloria postrera de esta casa será mayor que la primera, ha dicho el Señor de los ejércitos.',
+    },
+    newTestament: {
+      reference: 'Hebreos 12:26-27',
+      text: 'La voz del cual conmovió entonces la tierra, pero ahora ha prometido, diciendo: Aún una vez, y conmoveré no solamente la tierra, sino también el cielo. Y esta frase: Aún una vez, indica la remoción de las cosas movibles, como cosas hechas, para que queden las inconmovibles.',
+    },
+    description: 'Ageo alentó la reconstrucción del segundo templo prometiendo que su gloria sería mayor que la del de Salomón, porque el "Deseado de las naciones" lo llenaría. La Carta a los Hebreos cita la promesa del "conmover los cielos y la tierra" como prefiguración del sacudimiento escatológico que suprimirá las instituciones antiguas para que permanezca lo eterno. El Mesías es la gloria que supera al templo.',
+  },
+  {
+    id: 110,
+    title: 'Una obra admirable que no creeréis',
+    category: 'histórica',
+    theme: 'juicio sobre Israel',
+    importance: 3,
+    oldTestament: {
+      reference: 'Habacuc 1:5',
+      text: 'Mirad entre las naciones, y ved, y asombraos; porque haré una obra en vuestros días que aun cuando se os contare, no la creeréis.',
+    },
+    newTestament: {
+      reference: 'Hechos 13:41',
+      text: 'Mirad, oh menospreciadores, y asombraos, y pereced; porque yo hago una obra en vuestros días, obra que no creeréis, si alguien os la contare.',
+    },
+    description: 'Habacuc anunció a sus contemporáneos la llegada de los caldeos como instrumento de juicio: una obra tan prodigiosa que quien la escuchara no podría creerla. Pablo cita este versículo en la sinagoga de Antioquía para advertir a los judíos que rechazan el evangelio: la obra de Dios en Cristo —resurrección, misión a los gentiles— es igualmente increíble para el que se cierra a recibirla.',
+  },
+
   // ── APOCALÍPTICAS (complemento) ──────────────────────────────────
   {
     id: 76,
