@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
@@ -26,7 +26,7 @@ export type AppEntity =
 export class AppCard {
   @Input({ required: true }) entity!: AppEntity;
 
-  constructor(private router: Router) {}
+  private readonly router = inject(Router);
 
   get displayTitle(): string {
     return this.entity.kind === 'covenant' ? this.entity.data.name : this.entity.data.title;
