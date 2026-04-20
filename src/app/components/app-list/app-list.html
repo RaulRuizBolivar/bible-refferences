@@ -1,0 +1,87 @@
+<div class="list-container">
+  <header class="page-header">
+    <h1 class="page-title">{{ config.title }}</h1>
+    <p class="page-subtitle">{{ config.subtitle }}</p>
+  </header>
+
+  <div class="filter-bar">
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>{{ config.searchLabel }}</mat-label>
+      <input
+        matInput
+        [(ngModel)]="searchValue"
+        (ngModelChange)="onSearch($event)"
+        autocomplete="off"
+      />
+      <mat-icon matPrefix>search</mat-icon>
+      @if (searchValue) {
+        <button matSuffix mat-icon-button aria-label="Limpiar" (click)="limpiarFiltros()">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+
+    @switch (entityType) {
+      @case ('prophecy') {
+        <mat-chip-set class="filter-chips" aria-label="Filtrar por categoría">
+          <mat-chip
+            [class.chip-active]="estaActivo(null)"
+            (click)="seleccionarFiltro(null)"
+            class="filter-chip"
+          >
+            Todas
+          </mat-chip>
+          @for (cat of prophecyCategories; track cat) {
+            <mat-chip
+              [class.chip-active]="estaActivo(cat)"
+              (click)="seleccionarFiltro(cat)"
+              [class]="'filter-chip cat-filter cat-filter-' + cat"
+            >
+              {{ cat | titlecase }}
+            </mat-chip>
+          }
+        </mat-chip-set>
+      }
+      @case ('reference') {
+        <mat-chip-set class="filter-chips" aria-label="Filtrar por tipo">
+          <mat-chip
+            [class.chip-active]="estaActivo(null)"
+            (click)="seleccionarFiltro(null)"
+            class="filter-chip"
+          >
+            Todas
+          </mat-chip>
+          @for (type of referenceTypes; track type) {
+            <mat-chip
+              [class.chip-active]="estaActivo(type)"
+              (click)="seleccionarFiltro(type)"
+              [class]="'filter-chip type-filter type-filter-' + type"
+            >
+              <mat-icon class="chip-icon">{{ referenceTypeIcon(type) }}</mat-icon>
+              {{ type | titlecase }}
+            </mat-chip>
+          }
+        </mat-chip-set>
+      }
+    }
+  </div>
+
+  <p class="results-count">
+    {{ filtered().length }}
+    {{ filtered().length === 1 ? config.singularLabel : config.pluralLabel }}
+  </p>
+
+  @if (filtered().length > 0) {
+    <div class="card-grid">
+      @for (entity of filtered(); track entity.data.id) {
+        <app-card [entity]="entity" />
+      }
+    </div>
+  } @else {
+    <div class="empty-state">
+      <mat-icon>search_off</mat-icon>
+      <p>No se encontraron resultados con los filtros actuales.</p>
+      <button mat-stroked-button (click)="limpiarFiltros()">Limpiar filtros</button>
+    </div>
+  }
+</div>
