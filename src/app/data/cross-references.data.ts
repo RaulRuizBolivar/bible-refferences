@@ -1680,6 +1680,168 @@ export const CROSS_REFERENCES: CrossReference[] = [
     description: 'Pablo cita Génesis 2:24 —la institución del matrimonio— y revela que ese texto tenía desde el principio un significado más profundo: prefiguraba la unión de Cristo con la Iglesia. El matrimonio humano no es solo institución natural sino sacramento: signo visible de la alianza invisible entre Cristo y su Iglesia. Esta lectura es la base de la teología sacramental católica del matrimonio.',
   },
 
+  // ── CITAS DIRECTAS (complemento 3) ───────────────────────────────
+  {
+    id: 105,
+    title: 'La Palabra de Dios no vuelve vacía',
+    type: 'paralelo temático',
+    theme: 'teología de la Palabra',
+    importance: 4,
+    verseA: {
+      reference: 'Hebreos 4:12',
+      text: 'Porque la palabra de Dios es viva y eficaz, y más cortante que toda espada de dos filos; y penetra hasta partir el alma y el espíritu, las coyunturas y los tuétanos, y discierne los pensamientos y las intenciones del corazón.',
+    },
+    verseB: {
+      reference: 'Isaías 55:10-11',
+      text: 'Porque como desciende de los cielos la lluvia y la nieve, y no vuelve allá, sino que riega la tierra, y la hace germinar y producir... así será mi palabra que sale de mi boca; no volverá a mí vacía, sino que hará lo que yo quiero, y será prosperada en aquello para que la envié.',
+    },
+    description: 'Isaías 55 describe la Palabra de Dios con la imagen de la lluvia: baja del cielo, fecunda la tierra y cumple su misión. Hebreos 4 profundiza en la naturaleza de esa Palabra: viva, eficaz, cortante, capaz de discernir el interior del corazón. Ambos textos presentan la Palabra divina como fuerza activa y transformadora, no mero texto inerte.',
+  },
+  {
+    id: 106,
+    title: 'Por toda la tierra salió su voz',
+    type: 'cita directa',
+    theme: 'misión universal',
+    importance: 3,
+    verseA: {
+      reference: 'Romanos 10:18',
+      text: '¿No han oído? Antes bien, por toda la tierra ha salido la voz de ellos, y hasta los fines de la tierra sus palabras.',
+    },
+    verseB: {
+      reference: 'Salmo 19:4',
+      text: 'Por toda la tierra salió su voz, y hasta el extremo del mundo sus palabras.',
+    },
+    description: 'El Salmo 19 describe el silencioso testimonio de la creación: los cielos proclaman la gloria de Dios sin palabra audible, pero su voz llega hasta los confines de la tierra. Pablo lo aplica a la proclamación misionera del evangelio: el anuncio de Cristo en el mundo cumple lo que el himno cósmico prefiguraba. La "voz" de la creación se convierte en la voz de los misioneros.',
+  },
+  {
+    id: 107,
+    title: 'Hallado por los que no me buscaban',
+    type: 'cita directa',
+    theme: 'misión a los gentiles',
+    importance: 4,
+    verseA: {
+      reference: 'Romanos 10:20-21',
+      text: 'E Isaías se atreve y dice: Fui hallado de los que no me buscaban; me manifesté a los que no preguntaban por mí. Pero acerca de Israel dice: Todo el día extendí mis manos a un pueblo desobediente y contradictor.',
+    },
+    verseB: {
+      reference: 'Isaías 65:1-2',
+      text: 'Fui buscado por los que no preguntaban por mí; fui hallado por los que no me buscaban. Dije a gente que no invocaba mi nombre: Heme aquí, heme aquí. Extendí mis manos todo el día a pueblo rebelde, que anda por camino no bueno, en pos de sus pensamientos.',
+    },
+    description: 'Isaías 65 anticipa la paradoja de la misión: Dios se deja encontrar precisamente por quienes no le buscaban —los gentiles— mientras que su propio pueblo le rechaza con las manos extendidas de Dios. Pablo aplica la cita a su propia experiencia apostólica: los gentiles acogen el evangelio que Israel en su conjunto rechaza. La "ironía misionera" de Isaías se convierte en el principio estructural de Romanos 9-11.',
+  },
+  {
+    id: 108,
+    title: 'Seré su Dios y ellos serán mi pueblo',
+    type: 'cita directa',
+    theme: 'eclesiología',
+    importance: 4,
+    verseA: {
+      reference: '2 Corintios 6:16',
+      text: '¿Y qué acuerdo hay entre el templo de Dios y los ídolos? Porque vosotros sois el templo del Dios viviente, como Dios dijo: Habitaré y andaré entre ellos, y seré su Dios, y ellos serán mi pueblo.',
+    },
+    verseB: {
+      reference: 'Levítico 26:12',
+      text: 'Y andaré entre vosotros, y seré vuestro Dios, y vosotros seréis mi pueblo.',
+    },
+    description: 'La promesa del Sinaí —"seré vuestro Dios y vosotros seréis mi pueblo"— es la fórmula de la Alianza que recorre toda la Escritura. Pablo la aplica a los creyentes en Cristo: el templo ya no es de piedra sino la comunidad de los bautizados, el cuerpo de quienes acogen a Dios. La fórmula de la Alianza encuentra en la Iglesia su habitación definitiva.',
+  },
+  {
+    id: 109,
+    title: 'La bendición aarónica y la bendición trinitaria',
+    type: 'paralelo temático',
+    theme: 'liturgia y Trinidad',
+    importance: 3,
+    verseA: {
+      reference: '2 Corintios 13:13',
+      text: 'La gracia del Señor Jesucristo, el amor de Dios, y la comunión del Espíritu Santo sean con todos vosotros.',
+    },
+    verseB: {
+      reference: 'Números 6:24-26',
+      text: 'El Señor te bendiga, y te guarde; el Señor haga resplandecer su rostro sobre ti, y tenga de ti misericordia; el Señor alce sobre ti su rostro, y ponga en ti paz.',
+    },
+    description: 'La bendición aarónica del libro de Números es la fórmula litúrgica más antigua del pueblo de Dios: una triple invocación del nombre del Señor sobre el pueblo. La bendición trinitaria con que Pablo cierra su segunda carta a los Corintios tiene la misma estructura triple, aplicada a las tres Personas. La Trinidad cristiana es el despliegue pleno del "nombre" único de la bendición aarónica.',
+  },
+  {
+    id: 110,
+    title: 'En lenguas extrañas hablaré a este pueblo',
+    type: 'cita directa',
+    theme: 'dones del Espíritu',
+    importance: 3,
+    verseA: {
+      reference: '1 Corintios 14:21',
+      text: 'En la ley está escrito: En otras lenguas y con otros labios hablaré a este pueblo; y ni aun así me oirán, dice el Señor.',
+    },
+    verseB: {
+      reference: 'Isaías 28:11-12',
+      text: 'Porque en lengua de tartamudos, y en extraña lengua hablará a este pueblo, a los cuales dijo: Este es el reposo; dad reposo al cansado; y este es el refrigerio. Mas no quisieron oír.',
+    },
+    description: 'Isaías 28 describe irónicamente el juicio sobre Israel: Dios hablará a un pueblo que no quiso escuchar su palabra sencilla, ahora en lenguas extrañas —las de los asirios invasores—. Pablo aplica este texto al don de lenguas en Corinto: las lenguas son señal para los incrédulos, pero si la comunidad solo habla en lenguas sin interpretación, repite el escándalo que Isaías denunciaba.',
+  },
+  {
+    id: 111,
+    title: 'En tiempo aceptable te oí: el tiempo de la salvación',
+    type: 'cita directa',
+    theme: 'salvación y kairos',
+    importance: 4,
+    verseA: {
+      reference: '2 Corintios 6:2',
+      text: 'Porque dice: En tiempo aceptable te he oído, y en día de salvación te he socorrido. He aquí ahora el tiempo aceptable; he aquí ahora el día de salvación.',
+    },
+    verseB: {
+      reference: 'Isaías 49:8',
+      text: 'Así dijo el Señor: En tiempo aceptable te oí, y en el día de salvación te ayudé; y te guardaré, y te daré por pacto del pueblo, para que restaures la tierra, para que heredes asoladas heredades.',
+    },
+    description: 'El segundo Cántico del Siervo contiene la promesa divina al Siervo: un "tiempo aceptable" en que Dios escuchará y salvará. Pablo cita este texto para urgir a los corintios: ese "tiempo aceptable" ha llegado en Cristo, y es el presente de la predicación apostólica. El kairos de la salvación no es un momento histórico pasado sino el eterno "ahora" de la gracia.',
+  },
+  {
+    id: 112,
+    title: 'El Rey de gloria entra: tipología de la Ascensión',
+    type: 'tipología',
+    theme: 'ascensión y gloria',
+    importance: 3,
+    verseA: {
+      reference: 'Hechos 1:9-11',
+      text: 'Y habiendo dicho estas cosas, viéndolo ellos, fue alzado, y le recibió una nube que le ocultó de sus ojos... Este mismo Jesús, que ha sido tomado de vosotros al cielo, así vendrá como le habéis visto ir al cielo.',
+    },
+    verseB: {
+      reference: 'Salmo 24:7-10',
+      text: 'Alzad, oh puertas, vuestras cabezas, y alzaos vosotras, puertas eternas, y entrará el Rey de gloria... ¿Quién es este Rey de gloria? El Señor fuerte y valiente, el Señor poderoso en batalla.',
+    },
+    description: 'El Salmo 24 es un himno procesional que convoca a las puertas del cielo a abrirse para el "Rey de gloria". Los Padres de la Iglesia lo interpretaron como el diálogo litúrgico entre los ángeles ante la Ascensión de Cristo: el cielo pregunta quién es este ser humano que sube, y la respuesta es que es el Señor fuerte y valiente. La Ascensión es el ingreso triunfal del Hijo de Dios encarnado en la gloria del Padre.',
+  },
+  {
+    id: 113,
+    title: 'Echa a la esclava y su hijo: las dos alianzas',
+    type: 'cita directa',
+    theme: 'alianza y libertad',
+    importance: 3,
+    verseA: {
+      reference: 'Gálatas 4:30',
+      text: 'Mas ¿qué dice la Escritura? Echa a la esclava y a su hijo, porque no heredará el hijo de la esclava con el hijo de la libre.',
+    },
+    verseB: {
+      reference: 'Génesis 21:10',
+      text: 'Y dijo a Abraham: Echa a esta sierva y a su hijo, porque el hijo de esta sierva no ha de heredar con Isaac mi hijo.',
+    },
+    description: 'Sara exige la expulsión de Agar e Ismael para que Isaac herede solo. Pablo convierte este episodio doméstico en alegoría teológica: Agar es el Sinaí (alianza de esclavitud), Sara es Jerusalén celestial (alianza de libertad). La expulsión de Ismael prefigura la superación de la ley mosaica por la gracia evangélica. El heredero es el hijo de la promesa libre, no el de la servidumbre.',
+  },
+  {
+    id: 114,
+    title: 'El que quiere amar la vida: sabiduría de vida justa',
+    type: 'cita directa',
+    theme: 'ética cristiana',
+    importance: 3,
+    verseA: {
+      reference: '1 Pedro 3:10-12',
+      text: 'Porque: El que quiere amar la vida y ver días buenos, refrene su lengua de mal, y sus labios no hablen engaño; apártese del mal, y haga el bien; busque la paz, y sígala. Porque los ojos del Señor están sobre los justos, y sus oídos atentos a sus oraciones.',
+    },
+    verseB: {
+      reference: 'Salmo 34:12-16',
+      text: '¿Quién es el hombre que desea vida, que desea muchos días para ver el bien? Guarda tu lengua del mal, y tus labios de hablar engaño. Apártate del mal, y haz el bien; busca la paz, y síguela. Los ojos del Señor están sobre los justos, y atentos sus oídos al clamor de ellos.',
+    },
+    description: 'Pedro cita el Salmo 34 casi literalmente para guiar la conducta de los creyentes bajo persecución. La sabiduría ética del salmista —lengua guardada, paz buscada, mal evitado— no es reemplazada por el evangelio sino confirmada e interiorizada. La Torah sapiencial del AT es la gramática moral del Nuevo.',
+  },
+
   {
     id: 75,
     title: 'El incienso y la oración de los santos',

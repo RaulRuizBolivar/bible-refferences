@@ -1781,6 +1781,208 @@ export const PROPHECIES: Prophecy[] = [
     description: 'Habacuc anunció a sus contemporáneos la llegada de los caldeos como instrumento de juicio: una obra tan prodigiosa que quien la escuchara no podría creerla. Pablo cita este versículo en la sinagoga de Antioquía para advertir a los judíos que rechazan el evangelio: la obra de Dios en Cristo —resurrección, misión a los gentiles— es igualmente increíble para el que se cierra a recibirla.',
   },
 
+  // ── MESIÁNICAS · MINISTERIO (complemento 4) ──────────────────────
+  {
+    id: 111,
+    title: 'Gracia derramada en sus labios',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 45:2',
+      text: 'Has sido agraciado con mayor gracia que los hijos de los hombres; la gracia se derramó en tus labios; por tanto Dios te ha bendecido para siempre.',
+    },
+    newTestament: {
+      reference: 'Lucas 4:22',
+      text: 'Y todos daban buen testimonio de él, y estaban maravillados de las palabras de gracia que salían de su boca.',
+    },
+    description: 'El Salmo 45, cántico nupcial del rey mesiánico, describe la gracia que fluye de sus labios como cualidad única entre los hombres. Los contemporáneos de Jesús en Nazaret "se maravillaban de las palabras de gracia que salían de su boca", reconociendo en su predicación algo cualitativamente distinto a todo lo que habían escuchado.',
+  },
+  {
+    id: 112,
+    title: 'Solo Dios puede perdonar pecados',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 43:25',
+      text: 'Yo, yo soy el que borro tus rebeliones por amor de mí mismo, y no me acordaré de tus pecados.',
+    },
+    newTestament: {
+      reference: 'Marcos 2:7-10',
+      text: '¿Por qué habla este así? Blasfemias dice. ¿Quién puede perdonar pecados, sino solo Dios?... Pero para que sepáis que el Hijo del Hombre tiene potestad en la tierra para perdonar pecados, dijo al paralítico: A ti te digo: Levántate, toma tu lecho, y vete a tu casa.',
+    },
+    description: 'En Isaías 43, Yahvé se presenta como el único que puede borrar los pecados por gracia pura, sin mérito del perdonado. Cuando Jesús dice al paralítico "tus pecados te son perdonados", los escribas acusan blasfemia con razón desde su premisa: solo Dios perdona así. Jesús no niega la premisa; la confirma implícitamente al actuar con la autoridad exclusiva de Yahvé.',
+  },
+  {
+    id: 113,
+    title: 'El justo perseguido: profecía de la Pasión en Sabiduría',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 5,
+    oldTestament: {
+      reference: 'Sabiduría 2:12-20',
+      text: 'Acechemos al justo, porque nos es molesto... Se gloria de tener el conocimiento de Dios, y se llama hijo del Señor... Si el justo es hijo de Dios, él le asistirá, y le librará de las manos de sus adversarios. Probémosle con vejaciones e injurias... condenémosle a muerte ignominiosa, pues habrá respecto de sus palabras.',
+    },
+    newTestament: {
+      reference: 'Mateo 27:40-43',
+      text: 'Si eres Hijo de Dios, desciende de la cruz... Confió en Dios; líbrele ahora si le quiere; porque ha dicho: Soy Hijo de Dios.',
+    },
+    description: 'Sabiduría 2 es la profecía más asombrosa de la Pasión fuera de Isaías 53: el libro deuterocanónico describe con precisión quirúrgica el razonamiento de los persecutores del Justo —"probémosle para ver si Dios le rescata", "si es hijo de Dios que lo libre"— y las burlas bajo la cruz en Mateo 27 son una reproducción casi literal de ese texto. Los impíos que burlaban a Jesús cumplían sin saberlo la Escritura.',
+  },
+  {
+    id: 114,
+    title: 'Extraño a mis propios hermanos',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 69:8',
+      text: 'Extraño he sido para mis hermanos, y desconocido para los hijos de mi madre.',
+    },
+    newTestament: {
+      reference: 'Juan 7:5',
+      text: 'Porque ni aun sus hermanos creían en él.',
+    },
+    description: 'El Salmo 69, uno de los más usados en el NT para la Pasión, contiene este versículo que describe el rechazo por parte de la propia familia. Juan señala explícitamente que los hermanos de Jesús no creían en él, cumpliendo la imagen del salmista: el justo es extraño incluso en su propio círculo. El dolor del rechazo familiar precedió al rechazo de Israel.',
+  },
+  {
+    id: 115,
+    title: 'El Salvador viene a la hija de Sión',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 62:11',
+      text: 'He aquí que el Señor hizo oír hasta lo último de la tierra: Decid a la hija de Sión: He aquí viene tu Salvador; he aquí su recompensa con él, y delante de él su obra.',
+    },
+    newTestament: {
+      reference: 'Mateo 21:5',
+      text: 'Decid a la hija de Sión: He aquí, tu Rey viene a ti, manso, y sentado sobre una asna, sobre un pollino, hijo de la que acostumbra al yugo.',
+    },
+    description: 'Mateo combina en su cita de la entrada triunfal dos profecías: Isaías 62:11 ("decid a la hija de Sión: viene tu Salvador") y Zacarías 9:9 (el rey humilde sobre un asno). El evangelista ve la entrada en Jerusalén como el doble cumplimiento de esas voces proféticas que habían convocado a Sión a prepararse para la llegada de su Rey.',
+  },
+  {
+    id: 116,
+    title: 'Daré justicia con equidad y corregirá a los pobres',
+    category: 'mesiánica',
+    theme: 'ministerio',
+    importance: 3,
+    oldTestament: {
+      reference: 'Isaías 11:3-5',
+      text: 'Y le hará entender diligente en el temor del Señor. No juzgará según la vista de sus ojos, ni argüirá por lo que oigan sus oídos; sino que juzgará con justicia a los pobres, y argüirá con equidad por los mansos de la tierra.',
+    },
+    newTestament: {
+      reference: 'Juan 7:24',
+      text: 'No juzguéis según las apariencias, sino juzgad con justo juicio.',
+    },
+    description: 'Isaías 11 describe al Mesías con el Espíritu de discernimiento que juzgará no por apariencias sino con justicia profunda. Jesús en el Templo enseña exactamente este principio: el juicio recto supera el juicio superficial. Su ministerio fue un continuo cuestionamiento del juicio basado en apariencias —sabbat, pureza ritual, pecadores— en favor de la justicia interior.',
+  },
+
+  // ── MESIÁNICAS · PASIÓN (complemento 4) ──────────────────────────
+  {
+    id: 117,
+    title: 'Mis amigos y cercanos se mantienen lejos',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 38:11',
+      text: 'Mis amigos y mis compañeros se mantienen lejos de mi plaga, y mis cercanos se han alejado.',
+    },
+    newTestament: {
+      reference: 'Lucas 23:49',
+      text: 'Pero todos sus conocidos, y las mujeres que le habían seguido desde Galilea, estaban lejos mirando estas cosas.',
+    },
+    description: 'El Salmo 38 describe el abandono del justo sufriente por sus seres queridos. Lucas registra con precisión que "sus conocidos" observaban la crucifixión "desde lejos" —la misma distancia profética del salmo—. Solo unas pocas mujeres y el discípulo amado se acercaron a la cruz; la mayoría contempló desde la distancia el cumplimiento de la profecía.',
+  },
+  {
+    id: 118,
+    title: 'Dio la mejilla al que le hería',
+    category: 'mesiánica',
+    theme: 'pasión',
+    importance: 3,
+    oldTestament: {
+      reference: 'Lamentaciones 3:30',
+      text: 'Dé la mejilla al que le hiere, y sea colmado de afrentas.',
+    },
+    newTestament: {
+      reference: 'Mateo 26:67',
+      text: 'Entonces le escupieron en el rostro, y le dieron de puñetazos; y otros le abofetearon.',
+    },
+    description: 'Lamentaciones 3, meditación de Jeremías sobre el sufrimiento, incluye la imagen del siervo que ofrece la mejilla. Jesús no resistió los golpes ni los escupitajos durante el proceso ante el Sanedrín, cumpliendo este texto en su actitud de abandono manso a los que lo golpeaban. El propio Jesús había enseñado "pon la otra mejilla" (Mt 5:39), predicando lo que él mismo encarnaría.',
+  },
+
+  // ── MESIÁNICAS · RESURRECCIÓN (complemento 3) ────────────────────
+  {
+    id: 119,
+    title: 'Este es el día que hizo el Señor',
+    category: 'mesiánica',
+    theme: 'resurrección',
+    importance: 3,
+    oldTestament: {
+      reference: 'Salmo 118:24',
+      text: 'Este es el día que hizo el Señor; nos gozaremos y alegraremos en él.',
+    },
+    newTestament: {
+      reference: 'Juan 20:19',
+      text: 'Cuando llegó la noche de aquel mismo día, el primero de la semana, estando las puertas cerradas en el lugar donde los discípulos estaban reunidos por miedo de los judíos, vino Jesús, y se puso en medio, y les dijo: Paz a vosotros.',
+    },
+    description: 'El Salmo 118, himno pascual que rodea la entrada triunfal (v. 26 citado en Mt 21:9), culmina con este grito de júbilo ante "el día que hizo el Señor". La Iglesia primitiva reconoció en el Domingo de Resurrección ese "día" por excelencia: el primer día de la semana nueva cuando el Señor se presentó resucitado. El "día del Señor" veterotestamentario se convierte en el Domingo pascual.',
+  },
+
+  // ── MESIÁNICAS · NACIMIENTO (complemento 4) ──────────────────────
+  {
+    id: 120,
+    title: 'Moraré en medio de ti: el Dios que viene a habitar',
+    category: 'mesiánica',
+    theme: 'nacimiento',
+    importance: 4,
+    oldTestament: {
+      reference: 'Zacarías 2:10-11',
+      text: 'Canta de júbilo y alégrate, hija de Sión; porque he aquí vengo, y moraré en medio de ti, ha dicho el Señor. Y se unirán muchas naciones al Señor en aquel día, y me serán por pueblo, y moraré en medio de ti.',
+    },
+    newTestament: {
+      reference: 'Juan 1:14',
+      text: 'Y aquel Verbo fue hecho carne, y habitó entre nosotros (y vimos su gloria, gloria como del unigénito del Padre), lleno de gracia y de verdad.',
+    },
+    description: 'Zacarías promete que el Señor mismo vendrá y "morará en medio" de su pueblo, atrayendo incluso a las naciones. El verbo hebreo usado es šākan (morar en tienda), la misma raíz del sustantivo Šekiná (la presencia de Dios). Juan usa el equivalente griego: el Logos "levantó su tienda" (ἐσκήνωσεν) entre nosotros. La promesa de Zacarías se cumplió en la Encarnación.',
+  },
+
+  // ── APOCALÍPTICAS (complemento 4) ────────────────────────────────
+  {
+    id: 121,
+    title: 'El Espíritu derramado desde lo alto',
+    category: 'apocalíptica',
+    theme: 'espíritu',
+    importance: 4,
+    oldTestament: {
+      reference: 'Isaías 32:15',
+      text: 'Hasta que sobre nosotros sea derramado el Espíritu de lo alto, y el desierto se convierta en campo fértil, y el campo fértil sea estimado por bosque.',
+    },
+    newTestament: {
+      reference: 'Hechos 2:1-4',
+      text: 'Y de repente vino del cielo un estruendo como de un viento recio que soplaba, el cual llenó toda la casa donde estaban sentados... Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen.',
+    },
+    description: 'Isaías 32 anuncia el fin del desierto espiritual cuando el Espíritu sea derramado "desde lo alto" transformando la tierra yerma en jardín fértil. Pentecostés es ese derramamiento: el Espíritu cae sobre los discípulos transformando la comunidad dispersa en la Iglesia misionera. Donde Joel 2 (id 44) habla de profecías y visiones, Isaías 32 describe la transformación del paisaje completo.',
+  },
+  {
+    id: 122,
+    title: 'El reino y el dominio entregado al pueblo de los santos',
+    category: 'apocalíptica',
+    theme: 'reino',
+    importance: 3,
+    oldTestament: {
+      reference: 'Daniel 7:27',
+      text: 'Y que el reino, y el dominio y la majestad de los reinos debajo de todo el cielo, sea dado al pueblo de los santos del Altísimo, cuyo reino es reino eterno, y todos los dominios le servirán y obedecerán.',
+    },
+    newTestament: {
+      reference: 'Apocalipsis 20:4-6',
+      text: 'Y vi tronos, y se sentaron sobre ellos los que recibieron facultad de juzgar; y vi las almas de los decapitados por causa del testimonio de Jesús... y reinaron con Cristo mil años.',
+    },
+    description: 'Daniel 7 culmina con la visión del dominio universal entregado no solo al Hijo del Hombre sino "al pueblo de los santos del Altísimo". El Apocalipsis muestra cómo los mártires —los que han participado del sufrimiento de Cristo— participan también de su reinado. El reino de Daniel era prometido a una nación; el Apocalipsis lo abre a todo el que haya dado testimonio fiel.',
+  },
+
   // ── APOCALÍPTICAS (complemento) ──────────────────────────────────
   {
     id: 76,
