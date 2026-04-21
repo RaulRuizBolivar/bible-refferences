@@ -5,7 +5,7 @@
   </header>
 
   <div class="svg-container">
-    <svg class="network-svg" width="100%" height="100%">
+    <svg class="network-svg" [attr.viewBox]="viewBox" preserveAspectRatio="xMidYMid meet">
       <g class="edges">
         @for (ep of edgesWithPositions(); track ep.edge.source + ep.edge.target) {
           <line
@@ -33,8 +33,9 @@
             />
             <text
               [attr.x]="node.x"
-              [attr.y]="node.y + node.r + 14"
+              [attr.y]="node.y"
               text-anchor="middle"
+              dominant-baseline="central"
               class="node-label"
             >
               {{ node.name }}

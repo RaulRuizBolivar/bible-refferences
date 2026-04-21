@@ -1,16 +1,11 @@
-import {
-  Component,
-  inject,
-  AfterViewInit,
-  ElementRef,
-  HostListener,
-  signal,
-  computed,
-} from '@angular/core';
+import { Component, inject, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { CharactersService } from '../../services/characters';
 import { NetworkNode, NetworkEdge, ConnectionType } from '../../models/character.model';
+
+const SVG_W = 1000;
+const SVG_H = 600;
 
 @Component({
   selector: 'app-character-network',
@@ -19,10 +14,11 @@ import { NetworkNode, NetworkEdge, ConnectionType } from '../../models/character
   templateUrl: './character-network.html',
   styleUrl: './character-network.scss',
 })
-export class CharacterNetwork implements AfterViewInit {
+export class CharacterNetwork implements OnInit {
   private readonly svc = inject(CharactersService);
   private readonly router = inject(Router);
-  private readonly el = inject(ElementRef);
+
+  readonly viewBox = `0 0 ${SVG_W} ${SVG_H}`;
 
   readonly nodes = signal<NetworkNode[]>([]);
   readonly edges = signal<NetworkEdge[]>([]);
@@ -51,15 +47,8 @@ export class CharacterNetwork implements AfterViewInit {
       .filter((e): e is NonNullable<typeof e> => e !== null);
   });
 
-  ngAfterViewInit(): void {
-    this.recalcular();
-  }
-
-  @HostListener('window:resize')
-  recalcular(): void {
-    const w = this.el.nativeElement.clientWidth || 800;
-    const h = this.el.nativeElement.clientHeight || 600;
-    const { nodes, edges } = this.svc.buildNetwork(w, h);
+  ngOnInit(): void {
+    const { nodes, edges } = this.svc.buildNetwork(SVG_W, SVG_H);
     this.nodes.set(nodes);
     this.edges.set(edges);
   }

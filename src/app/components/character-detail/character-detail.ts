@@ -1,6 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, computed } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
@@ -27,7 +29,8 @@ export class CharacterDetail {
   private readonly location = inject(Location);
   private readonly svc = inject(CharactersService);
 
-  readonly character = this.svc.getById(this.route.snapshot.paramMap.get('id') ?? '');
+  private readonly id = toSignal(this.route.paramMap.pipe(map(p => p.get('id') ?? '')));
+  readonly character = computed(() => this.svc.getById(this.id() ?? ''));
 
   connectedCharacter(id: string): BibleCharacter | undefined {
     return this.svc.getById(id);

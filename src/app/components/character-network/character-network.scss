@@ -1,50 +1,42 @@
-:host {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .network-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  padding: 28px 0 32px;
 }
 
 .network-header {
   text-align: center;
-  padding: 24px 16px 12px;
+  margin-bottom: 18px;
 
   .network-title {
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    font-weight: 300;
-    margin: 0 0 4px;
-    color: #263238;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: #1c1b1f;
   }
 
   .network-subtitle {
-    font-size: 0.9rem;
-    color: #78909c;
+    font-size: 0.85rem;
+    color: #49454f;
     margin: 0;
   }
 }
 
 .svg-container {
-  flex: 1;
-  min-height: 400px;
-  background: #fafafa;
-  border-radius: 8px;
-  margin: 0 16px;
-  overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .network-svg {
   display: block;
+  width: 100%;
+  height: auto;
+  min-width: 600px;
 }
 
 .node-label {
   font-size: 11px;
+  font-weight: 600;
   font-family: sans-serif;
-  fill: #37474f;
+  fill: #263238;
   pointer-events: none;
   user-select: none;
 }
