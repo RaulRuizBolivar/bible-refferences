@@ -15,7 +15,7 @@ describe('PropheciesService', () => {
   });
 
   it('debe devolver todas las profecías sin filtros activos', () => {
-    expect(service.filtered().length).toBe(61);
+    expect(service.filtered().length).toBe(122);
   });
 
   it('debe filtrar correctamente por categoría mesiánica', () => {
@@ -82,7 +82,7 @@ describe('PropheciesService', () => {
     service.setSearch('destrucción');
     service.setCategory(null);
     service.setSearch('');
-    expect(service.filtered().length).toBe(61);
+    expect(service.filtered().length).toBe(122);
   });
 
   it('debe exponer las tres categorías disponibles', () => {

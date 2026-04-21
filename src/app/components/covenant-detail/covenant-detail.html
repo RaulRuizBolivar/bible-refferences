@@ -1,0 +1,122 @@
+@if (covenant; as c) {
+  <div class="detail-page">
+    <div class="detail-container">
+      <button mat-button class="back-btn" (click)="volver()">
+        <mat-icon>arrow_back</mat-icon>
+        Volver
+      </button>
+
+      <header class="detail-header" [style.border-left-color]="c.color">
+        <h1 class="detail-title">{{ c.name }}</h1>
+        <div class="meta-row">
+          <mat-chip-set>
+            <mat-chip class="period-chip">{{ c.period }}</mat-chip>
+            <mat-chip class="mediator-chip">
+              <mat-icon class="chip-icon">person</mat-icon>
+              {{ c.mediator }}
+            </mat-chip>
+          </mat-chip-set>
+          <div class="importance-stars" [title]="'Importancia: ' + c.importance + '/5'">
+            @for (s of [1, 2, 3, 4, 5]; track s) {
+              <mat-icon class="star" [class.filled]="s <= c.importance">star</mat-icon>
+            }
+          </div>
+        </div>
+      </header>
+
+      <mat-divider />
+
+      <section class="info-grid">
+        <div class="info-item">
+          <span class="info-label">
+            <mat-icon>group</mat-icon>
+            Partes
+          </span>
+          <span class="info-value">{{ c.parties }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <mat-icon>token</mat-icon>
+            Señal del pacto
+          </span>
+          <span class="info-value">{{ c.sign }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <mat-icon>star</mat-icon>
+            Promesa
+          </span>
+          <span class="info-value">{{ c.promise }}</span>
+        </div>
+        @if (c.condition) {
+          <div class="info-item">
+            <span class="info-label">
+              <mat-icon>rule</mat-icon>
+              Condición
+            </span>
+            <span class="info-value">{{ c.condition }}</span>
+          </div>
+        }
+      </section>
+
+      <mat-divider />
+
+      <section class="verse-section">
+        <h2 class="verse-label">
+          <mat-icon>history_edu</mat-icon>
+          Antiguo Testamento
+        </h2>
+        <p class="verse-ref">{{ c.oldTestament.reference }}</p>
+        <blockquote class="verse-text">{{ c.oldTestament.text }}</blockquote>
+      </section>
+
+      <mat-divider />
+
+      @if (c.newTestament) {
+        <section class="verse-section">
+          <h2 class="verse-label">
+            <mat-icon>auto_stories</mat-icon>
+            Nuevo Testamento — Cumplimiento
+          </h2>
+          <p class="verse-ref">{{ c.newTestament.reference }}</p>
+          <blockquote class="verse-text">{{ c.newTestament.text }}</blockquote>
+        </section>
+      } @else {
+        <section class="verse-section unfulfilled">
+          <mat-icon>schedule</mat-icon>
+          <p>Esta alianza no tiene sin registro en el Nuevo Testamento explícito.</p>
+        </section>
+      }
+
+      <mat-divider />
+
+      <section class="description-section">
+        <h2 class="verse-label">
+          <mat-icon>info_outline</mat-icon>
+          Notas de cumplimiento
+        </h2>
+        <p class="description-text">{{ c.fulfillmentNotes }}</p>
+        <p class="description-text">{{ c.description }}</p>
+      </section>
+
+      @if (previousCovenant) {
+        <mat-divider />
+        <section class="chain-section">
+          <h2 class="verse-label">
+            <mat-icon>link</mat-icon>
+            Alianza anterior
+          </h2>
+          <a mat-stroked-button [routerLink]="['/covenant', previousCovenant.id]">
+            {{ previousCovenant.name }}
+          </a>
+        </section>
+      }
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <mat-icon>search_off</mat-icon>
+    <p>Alianza no encontrada.</p>
+    <button mat-stroked-button (click)="volver()">Volver</button>
+  </div>
+}

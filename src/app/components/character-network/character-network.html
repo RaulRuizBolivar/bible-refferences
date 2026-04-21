@@ -1,0 +1,56 @@
+<div class="network-wrapper">
+  <header class="network-header">
+    <h1 class="network-title">Red de Personajes Bíblicos</h1>
+    <p class="network-subtitle">Haz clic en un personaje para ver sus detalles</p>
+  </header>
+
+  <div class="svg-container">
+    <svg class="network-svg" width="100%" height="100%">
+      <g class="edges">
+        @for (ep of edgesWithPositions(); track ep.edge.source + ep.edge.target) {
+          <line
+            [attr.x1]="ep.x1"
+            [attr.y1]="ep.y1"
+            [attr.x2]="ep.x2"
+            [attr.y2]="ep.y2"
+            [attr.stroke]="edgeColor(ep.edge.type)"
+            [attr.stroke-width]="ep.edge.strength"
+            stroke-opacity="0.45"
+          />
+        }
+      </g>
+      <g class="nodes">
+        @for (node of nodes(); track node.id) {
+          <g class="node" (click)="irAlPersonaje(node.id)" style="cursor:pointer">
+            <circle
+              [attr.cx]="node.x"
+              [attr.cy]="node.y"
+              [attr.r]="node.r"
+              [attr.fill]="node.color"
+              fill-opacity="0.9"
+              stroke="white"
+              stroke-width="2"
+            />
+            <text
+              [attr.x]="node.x"
+              [attr.y]="node.y + node.r + 14"
+              text-anchor="middle"
+              class="node-label"
+            >
+              {{ node.name }}
+            </text>
+          </g>
+        }
+      </g>
+    </svg>
+  </div>
+
+  <div class="legend">
+    @for (item of legend; track item.type) {
+      <div class="legend-item">
+        <span class="legend-dot" [style.background]="item.color"></span>
+        <span class="legend-label">{{ item.type }}</span>
+      </div>
+    }
+  </div>
+</div>

@@ -15,7 +15,7 @@ describe('ReferencesService', () => {
   });
 
   it('debe devolver todas las referencias sin filtros activos', () => {
-    expect(service.filtered().length).toBe(60);
+    expect(service.filtered().length).toBe(114);
   });
 
   it('debe filtrar correctamente por tipo tipología', () => {
@@ -70,7 +70,7 @@ describe('ReferencesService', () => {
     service.setSearch('cordero');
     service.setType(null);
     service.setSearch('');
-    expect(service.filtered().length).toBe(60);
+    expect(service.filtered().length).toBe(114);
   });
 
   it('debe exponer los cuatro tipos disponibles', () => {

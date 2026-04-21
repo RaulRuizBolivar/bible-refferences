@@ -1,0 +1,81 @@
+@if (character; as c) {
+  <div class="detail-page">
+    <div class="detail-container">
+      <button mat-button class="back-btn" (click)="volver()">
+        <mat-icon>arrow_back</mat-icon>
+        Volver
+      </button>
+
+      <header class="detail-header" [style.border-left-color]="c.color">
+        <h1 class="detail-title">{{ c.name }}</h1>
+        <div class="meta-row">
+          <mat-chip-set>
+            <mat-chip class="role-chip">{{ c.role }}</mat-chip>
+            <mat-chip class="testament-chip">{{ c.testament }}</mat-chip>
+          </mat-chip-set>
+          <span class="period-text">
+            <mat-icon class="period-icon">schedule</mat-icon>
+            {{ c.period }}
+          </span>
+        </div>
+      </header>
+
+      <mat-divider />
+
+      <section class="description-section">
+        <p class="description-text">{{ c.description }}</p>
+      </section>
+
+      @if (c.connections.length > 0) {
+        <mat-divider />
+        <section class="connections-section">
+          <h2 class="section-title">
+            <mat-icon>hub</mat-icon>
+            Conexiones ({{ c.connections.length }})
+          </h2>
+          <div class="connections-list">
+            @for (conn of c.connections; track conn.targetId) {
+              @let target = connectedCharacter(conn.targetId);
+              <div class="connection-item">
+                <span class="conn-type-badge conn-type-{{ conn.type }}">{{ conn.type }}</span>
+                <span class="conn-label">{{ conn.label }}</span>
+                @if (target) {
+                  <a mat-button class="conn-link" [routerLink]="['/character', conn.targetId]">
+                    {{ target.name }}
+                    <mat-icon>arrow_forward</mat-icon>
+                  </a>
+                }
+              </div>
+            }
+          </div>
+        </section>
+      }
+
+      <mat-divider />
+
+      <section class="stats-section">
+        <div class="stat-item">
+          <mat-icon>auto_awesome</mat-icon>
+          <span class="stat-value">{{ c.prophecyIds.length }}</span>
+          <span class="stat-label">profecías relacionadas</span>
+        </div>
+        <div class="stat-item">
+          <mat-icon>swap_horiz</mat-icon>
+          <span class="stat-value">{{ c.referenceIds.length }}</span>
+          <span class="stat-label">referencias cruzadas</span>
+        </div>
+        <div class="stat-item">
+          <mat-icon>hub</mat-icon>
+          <span class="stat-value">{{ c.connections.length }}</span>
+          <span class="stat-label">conexiones</span>
+        </div>
+      </section>
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <mat-icon>person_off</mat-icon>
+    <p>Personaje no encontrado.</p>
+    <button mat-stroked-button (click)="volver()">Volver</button>
+  </div>
+}
