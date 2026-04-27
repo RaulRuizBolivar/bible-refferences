@@ -1,11 +1,6 @@
 <mat-card class="app-card" [style.border-top-color]="borderColor">
   <mat-card-header>
     <mat-card-title class="card-title">{{ displayTitle }}</mat-card-title>
-    <div class="importance-stars" [title]="'Importancia: ' + entity.data.importance + '/5'">
-      @for (s of [1, 2, 3, 4, 5]; track s) {
-        <mat-icon class="star" [class.filled]="s <= entity.data.importance">star</mat-icon>
-      }
-    </div>
     <mat-card-subtitle>
       <mat-chip-set>
         @switch (entity.kind) {

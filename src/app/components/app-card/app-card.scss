@@ -17,20 +17,6 @@
   }
 }
 
-.importance-stars {
-  display: flex;
-  gap: 1px;
-  margin-bottom: 4px;
-
-  .star {
-    font-size: 14px;
-    width: 14px;
-    height: 14px;
-    color: #d0d0d0;
-    &.filled { color: #f59e0b; }
-  }
-}
-
 .card-title {
   font-size: 1rem !important;
   font-weight: 600 !important;
@@ -120,4 +106,59 @@ mat-card-content.card-content {
   font-size: 14px !important;
   width: 14px !important;
   height: 14px !important;
+}
+
+:host-context(body.dark-theme) {
+  .app-card {
+    background: #1b2230 !important;
+  }
+
+  .card-title {
+    color: #e8edf7;
+  }
+
+  .reference-row {
+    .ref-icon {
+      color: #9fb2ff;
+    }
+
+    .ref-text {
+      color: #d1dae8;
+    }
+  }
+
+  .unfulfilled-row {
+    .ref-icon,
+    .ref-text {
+      color: #9aa7bc;
+    }
+  }
+
+  .card-description {
+    color: #b7c3d6;
+  }
+
+  .cat-chip {
+    &.cat-mesiánica    { background: #1f3a2a !important; color: #95e0a2 !important; }
+    &.cat-apocalíptica { background: #4a1f39 !important; color: #ff9fca !important; }
+    &.cat-histórica    { background: #1a3552 !important; color: #9dc7f8 !important; }
+  }
+
+  .type-chip {
+    &.type-tipología          { background: #2e2348 !important; color: #c9b0ff !important; }
+    &.type-cita\ directa      { background: #4a2c17 !important; color: #ffc08e !important; }
+    &.type-paralelo\ temático { background: #4a1f39 !important; color: #ff9fca !important; }
+    &.type-alusión            { background: #453d17 !important; color: #ffe28a !important; }
+  }
+
+  .period-chip {
+    background: #202a4a !important;
+    color: #b8c6ff !important;
+  }
+
+  .mediator-chip,
+  .theme-chip {
+    background: #2b3240 !important;
+    color: #d4dbe8 !important;
+  }
 }

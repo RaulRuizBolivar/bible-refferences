@@ -22,6 +22,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.dark-theme {
+  color-scheme: dark;
+  background-color: #0f1117;
+  color: #e6eaf1;
+
+  h1 {
+    color: #e8edf7;
+  }
+}
+
 *,
 *::before,
 *::after {
